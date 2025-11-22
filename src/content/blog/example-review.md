@@ -5,7 +5,7 @@ pubDate: 2025-01-01
 type: review
 rating: 4
 tags: [review, gadget]
-heroImage: ../assets/blog-placeholder-1.jpg
+heroImage: ../../assets/blog-placeholder-1.jpg
 videoUrl: "https://www.youtube.com/watch?v=VIDEOID"
 affiliateLinks:
   - label: "Buy on Amazon"
@@ -25,4 +25,3 @@ Short intro. Field-tested with real-world usage.
 
 ## Verdict
 Strong pick if you need portability.
-
