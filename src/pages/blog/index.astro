@@ -60,6 +60,18 @@ const filtered = type ? posts.filter((p) => p.data.type === type) : posts;
 			}
 			ul li a {
 				display: block;
+				background: var(--paper);
+				border: 1px solid var(--rule);
+				position: relative;
+			}
+			ul li a::before {
+				content: "";
+				position: absolute;
+				inset: 0;
+				pointer-events: none;
+				background-image: radial-gradient(rgba(0,0,0,.06) 1px, transparent 1px);
+				background-size: 7px 7px;
+				opacity: .12;
 			}
 			.title {
 				margin: 0;

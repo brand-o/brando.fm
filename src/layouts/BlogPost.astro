@@ -98,8 +98,20 @@ if (videoUrl) {
 				width: 720px;
 				max-width: calc(100% - 2em);
 				margin: auto;
-				padding: 1em;
+				padding: 1.25em 1.25em 1.5em;
 				color: rgb(var(--gray-dark));
+				background: var(--paper);
+				border: 1px solid var(--rule);
+				position: relative;
+			}
+			.prose::before {
+				content: "";
+				position: absolute;
+				inset: 0;
+				pointer-events: none;
+				background-image: radial-gradient(rgba(0,0,0,.06) 1px, transparent 1px);
+				background-size: 7px 7px;
+				opacity: .14;
 			}
 			.title {
 				margin-bottom: 1em;

@@ -1,11 +1,12 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
+const [brandRoot, brandTld] = SITE_TITLE.split('.', 2);
 ---
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<h2 class="brand"><a href="/">{brandRoot}.<span class="brand-dot">{brandTld}</span></a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">home</HeaderLink>
 			<HeaderLink href="/blog?type=review">reviews</HeaderLink>
@@ -14,9 +15,12 @@ import HeaderLink from './HeaderLink.astro';
 	</nav>
 </header>
 <style>
-	header { margin: 0; padding: 0 1em; background: var(--paper); border-bottom: 1px solid var(--rule); }
+	header { margin: 0; padding: 0 1em; background: var(--paper); border-bottom: 1px solid var(--rule); position: relative; }
+	/* subtle texture overlay */
+	header::before { content:""; position:absolute; inset:0; pointer-events:none; opacity:.12; background-image: radial-gradient(rgba(0,0,0,.08) 1px, transparent 1px); background-size: 6px 6px; }
 	h2 { margin: 0; font-size: 1em; }
 	h2 a, h2 a.active { text-decoration: none; color: rgb(var(--black)); }
+	.brand .brand-dot { color: var(--accent); }
 
 	nav { display: flex; align-items: center; justify-content: space-between; }
 	nav a { padding: 1em 0.5em; color: var(--ink); border-bottom: 2px solid transparent; text-decoration: none; }

@@ -59,8 +59,23 @@ body::before {
         repeating-linear-gradient(90deg, transparent 0, rgba(0,0,0,.01) 2px, transparent 4px);
     background-size: 4px 4px, 6px 6px, 100% 100%, 100% 100%;
     mix-blend-mode: multiply;
-    opacity: .14;
+    opacity: .18;
 }
+
+/* subtle texture overlays for primary surfaces */
+header::before, footer::before, main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+        radial-gradient(rgba(0,0,0,.05) 0.8px, transparent 0.8px),
+        radial-gradient(rgba(0,0,0,.02) 1px, transparent 1px);
+    background-size: 5px 5px, 9px 9px;
+    mix-blend-mode: multiply;
+    opacity: .16;
+}
+main { position: relative; }
 main {
 	width: 720px;
 	max-width: calc(100% - 2em);
