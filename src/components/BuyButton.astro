@@ -1,0 +1,14 @@
+---
+interface Props { href: string; label?: string }
+const { href, label = 'Buy on Amazon' } = Astro.props;
+---
+<a class="buy" href={href} target="_blank" rel="sponsored noopener nofollow">{label}</a>
+<style>
+  .buy {
+    display:inline-block; padding:.65rem 1rem; border-radius:8px;
+    background: var(--accent); color:white; font-weight:600; text-decoration:none;
+  }
+  .buy:hover { filter:brightness(0.95); }
+  @media (max-width: 720px) { .buy { width: 100%; text-align: center; } }
+</style>
+

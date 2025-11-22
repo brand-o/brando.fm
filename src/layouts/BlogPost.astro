@@ -5,15 +5,67 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import AffiliateDisclosure from '../components/AffiliateDisclosure.astro';
+import BuyButton from '../components/BuyButton.astro';
+import StarRating from '../components/StarRating.astro';
+import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  type = 'post',
+  rating,
+  affiliateLinks = [],
+  parts = [],
+  videoUrl,
+  canonicalUrl,
+  tags = [],
+}: Props = Astro.props;
+
+const canonical = canonicalUrl ?? new URL(Astro.url.pathname, Astro.site).href;
+const imageUrl = heroImage ? new URL(heroImage.src, Astro.site).href : undefined;
+const jsonLd: Record<string, any> = {
+  '@context': 'https://schema.org',
+  '@type': type === 'review' ? 'Review' : 'Article',
+  headline: title,
+  description,
+  datePublished: pubDate.toISOString(),
+  dateModified: (updatedDate ?? pubDate).toISOString(),
+  url: canonical,
+  image: imageUrl,
+};
+if (type === 'review') {
+  jsonLd.itemReviewed = { '@type': 'Product', name: title };
+  if (typeof rating === 'number') {
+    jsonLd.reviewRating = {
+      '@type': 'Rating',
+      ratingValue: rating,
+      bestRating: 5,
+      worstRating: 1,
+    };
+  }
+}
+if (videoUrl) {
+  jsonLd.video = {
+    '@type': 'VideoObject',
+    name: title,
+    uploadDate: pubDate.toISOString(),
+    embedUrl: videoUrl,
+    thumbnailUrl: imageUrl ? [imageUrl] : undefined,
+  };
+}
 ---
 
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description} image={heroImage} />
+		<link rel="canonical" href={canonical} />
+		<script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
 		<style>
 			main {
 				width: calc(100% - 2em);
@@ -45,13 +97,16 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.title h1 {
 				margin: 0 0 0.5em 0;
 			}
-			.date {
+			.meta {
 				margin-bottom: 0.5em;
 				color: rgb(var(--gray));
 			}
 			.last-updated-on {
 				font-style: italic;
 			}
+			.buy-row { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:center; margin:1rem 0; }
+			.parts { margin:1.5rem 0; }
+			.parts a { text-decoration:none; }
 		</style>
 	</head>
 
@@ -64,19 +119,36 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				</div>
 				<div class="prose">
 					<div class="title">
-						<div class="date">
+						<div class="meta">
 							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
+							{updatedDate && (
+								<div class="last-updated-on">Last updated on <FormattedDate date={updatedDate} /></div>
+							)}
 						</div>
 						<h1>{title}</h1>
+						{typeof rating === 'number' && <StarRating value={rating} />}
 						<hr />
 					</div>
+					{affiliateLinks.length > 0 && <AffiliateDisclosure />}
+					{affiliateLinks.length > 0 && (
+						<div class="buy-row">
+							{affiliateLinks.map((l) => <BuyButton href={l.url} label={l.label} />)}
+						</div>
+					)}
+
+					{videoUrl && <YouTubeEmbed url={videoUrl} />}
+
+					{parts.length > 0 && (
+						<div class="parts">
+							<h3>Parts List</h3>
+							<ul>
+								{parts.map((p) => (
+									<li><a href={p.url} target="_blank" rel="sponsored noopener nofollow">{p.name}</a></li>
+								))}
+							</ul>
+						</div>
+					)}
+
 					<slot />
 				</div>
 			</article>

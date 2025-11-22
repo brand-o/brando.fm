@@ -1,0 +1,13 @@
+---
+interface Props { value: number }
+const v = Math.round(Math.max(1, Math.min(5, Astro.props.value ?? 0)));
+const stars = Array.from({ length: 5 }, (_, i) => i < v);
+---
+<div class="rating" aria-label={`Rating: ${v} out of 5`}>
+  {stars.map((filled) => <span class={filled ? 'star filled' : 'star'}>★</span>)}
+</div>
+<style>
+  .star { color: #ccc; margin-right:2px; }
+  .star.filled { color: #f5b301; }
+</style>
+

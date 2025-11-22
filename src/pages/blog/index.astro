@@ -10,6 +10,8 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+const type = Astro.url.searchParams.get('type');
+const filtered = type ? posts.filter((p) => p.data.type === type) : posts;
 ---
 
 <!doctype html>
@@ -20,6 +22,9 @@ const posts = (await getCollection('blog')).sort(
 			main {
 				width: 960px;
 			}
+			.tabs { display:flex; gap:.75rem; margin: 1rem 0; }
+			.tabs a { text-decoration:none; padding:.25rem .5rem; border-radius:6px; border:1px solid rgba(0,0,0,.1); }
+			.tabs a.active { background: var(--accent); color:white; border-color: transparent; }
 			ul {
 				display: flex;
 				flex-wrap: wrap;
@@ -89,10 +94,15 @@ const posts = (await getCollection('blog')).sort(
 	<body>
 		<Header />
 		<main>
+			<nav class="tabs">
+				<a href="/blog" class={type ? '' : 'active'}>All</a>
+				<a href="/blog?type=review" class={type === 'review' ? 'active' : ''}>Reviews</a>
+				<a href="/blog?type=project" class={type === 'project' ? 'active' : ''}>Projects</a>
+			</nav>
 			<section>
 				<ul>
 					{
-						posts.map((post) => (
+						filtered.map((post) => (
 							<li>
 								<a href={`/blog/${post.id}/`}>
 									{post.data.heroImage && (
