@@ -7,8 +7,10 @@ const { href, label = 'Buy on Amazon' } = Astro.props;
   .buy {
     display:inline-block; padding:.65rem 1rem; border-radius:8px;
     background: var(--accent); color:white; font-weight:600; text-decoration:none;
+    border: 1px solid var(--ink-mid);
+    background-image: radial-gradient(rgba(255,255,255,.06) 1px, transparent 1px);
+    background-size: 8px 8px;
   }
-  .buy:hover { filter:brightness(0.95); }
+  .buy:hover { filter:brightness(0.95); background-color: var(--accent-dark); }
   @media (max-width: 720px) { .buy { width: 100%; text-align: center; } }
 </style>
-

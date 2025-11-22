@@ -74,6 +74,16 @@ if (videoUrl) {
 			}
 			.hero-image {
 				width: 100%;
+				position: relative;
+			}
+			.hero-image::after {
+				content: "";
+				position: absolute;
+				inset: 10px -10px -10px 10px;
+				z-index: 0;
+				background-image: radial-gradient(rgba(0,0,0,.08) 1px, transparent 1px);
+				background-size: 8px 8px;
+				opacity: .22;
 			}
 			.hero-image img {
 				display: block;
@@ -81,6 +91,8 @@ if (videoUrl) {
 				border-radius: 12px;
 				box-shadow: none;
 				filter: grayscale(100%) contrast(0.95);
+				position: relative;
+				z-index: 1;
 			}
 			.prose {
 				width: 720px;
