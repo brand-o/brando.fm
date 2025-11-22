@@ -6,7 +6,7 @@ const [brandRoot, brandTld] = SITE_TITLE.split('.', 2);
 
 <header>
     <nav>
-        <h2 class="brand"><a href="/" data-text={`${brandRoot}.${brandTld}`}>{brandRoot}<span class="brand-sep">.</span><span class="brand-dot">{brandTld}</span></a></h2>
+        <h2 class="brand"><a class="grainy-shadow" href="/" data-text={`${brandRoot}.${brandTld}`}>{brandRoot}<span class="brand-sep">.</span><span class="brand-dot">{brandTld}</span></a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">home</HeaderLink>
 			<HeaderLink href="/blog?type=review">reviews</HeaderLink>
@@ -21,17 +21,7 @@ const [brandRoot, brandTld] = SITE_TITLE.split('.', 2);
     h2 { margin: 0; font-size: 1.15em; position: relative; display: inline-block; }
     h2 a, h2 a.active { text-decoration: none; color: rgb(var(--black)); position: relative; display: inline-block; }
     .brand .brand-dot, .brand .brand-sep { color: var(--accent); }
-    /* per-letter halftone drop shadow masked to text */
-    .brand a::after {
-        content: attr(data-text);
-        position: absolute; left: 0; top: 0;
-        transform: translateY(2px);
-        color: transparent;
-        background-image: radial-gradient(rgba(0,0,0,.12) .8px, transparent .8px);
-        background-size: 7px 7px;
-        -webkit-background-clip: text; background-clip: text;
-        opacity: .45; pointer-events: none;
-    }
+    /* remove prior per-letter halftone; grainy-shadow utility handles drop */
 
     nav { display: flex; align-items: center; justify-content: space-between; }
 	nav a { padding: 1em 0.5em; color: var(--ink); border-bottom: 2px solid transparent; text-decoration: none; }

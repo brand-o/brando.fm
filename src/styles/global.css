@@ -18,6 +18,8 @@
     --gray-dark: 28, 28, 26;
     --gray-gradient: var(--paper), var(--paper);
     --box-shadow: none;
+    /* reusable noise data url */
+    --noise-url: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.35'/></svg>");
 }
 @font-face {
 	font-family: "Atkinson";
@@ -42,7 +44,7 @@ body {
     word-wrap: break-word;
     overflow-wrap: break-word;
     color: var(--ink);
-    font-size: clamp(20px, 1rem + 1.1vw, 24px);
+    font-size: clamp(21px, 1rem + 1.2vw, 25px);
     line-height: 1.7;
 }
 /* subtle paper noise + micro dot texture */
@@ -53,10 +55,10 @@ body::before {
     pointer-events: none;
     z-index: 0;
     /* random grain via SVG turbulence (see css-tricks grainy gradients) */
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='320'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='4' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.35'/></svg>");
-    background-size: 320px 320px;
+    background-image: var(--noise-url);
+    background-size: 220px 220px;
     mix-blend-mode: multiply;
-    opacity: .20;
+    opacity: .22;
 }
 
 /* subtle random noise on primary surfaces */
@@ -65,10 +67,10 @@ header::before, footer::before, main::before {
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.35'/></svg>");
+    background-image: var(--noise-url);
     background-size: 220px 220px;
     mix-blend-mode: multiply;
-    opacity: .13;
+    opacity: .14;
 }
 main { position: relative; }
 
@@ -83,6 +85,27 @@ main::after {
     background-size: 9px 9px;
     filter: blur(.25px) contrast(0.9);
     opacity: .15;
+}
+
+/* Grainy drop shadow utility (CSS-Tricks style) */
+.grainy-shadow { position: relative; }
+.grainy-shadow::after {
+  content: "";
+  position: absolute;
+  left: 6%; right: 6%;
+  top: calc(100% - 2px);
+  height: var(--gs-size, 12px);
+  background: radial-gradient(ellipse at center, rgba(0,0,0,.28) 0%, rgba(0,0,0,.14) 45%, transparent 70%);
+  filter: blur(var(--gs-blur, 8px));
+  opacity: .38;
+  pointer-events: none;
+  -webkit-mask-image: var(--noise-url);
+  mask-image: var(--noise-url);
+  -webkit-mask-size: 200px 200px;
+  mask-size: 200px 200px;
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+  mix-blend-mode: multiply;
 }
 main {
     width: clamp(680px, 92vw, 820px);
