@@ -1,7 +1,7 @@
 ---
 title: "I Built a 7.3″ E-Ink Flight Calendar Using Parts From Amazon"
 description: "A minimalist desk display that pulls my airline schedule and updates automatically. Built using a 7.3'' e-ink panel, a Raspberry Pi, and a simple picture frame."
-publishDate: 2025-02-20
+pubDate: 2025-02-20
 tags: ["project", "diy", "pilot", "tech", "home-automation"]
 ---
 

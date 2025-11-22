@@ -1,7 +1,7 @@
 ---
 title: "Building the Ultimate Tech Utility Flash Drive (and the Drives I Actually Recommend)"
 description: "A combined walkthrough of my Brando.Tools Utility Drive build plus my real-world USB flash drive recommendations, benchmarked by Windows install times."
-publishDate: 2025-02-21
+pubDate: 2025-02-21
 tags: ["project", "tools", "tech", "usb", "diy"]
 ---
 
