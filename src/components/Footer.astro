@@ -3,16 +3,16 @@ const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()}brando.fm All rights reserved.
-	
-	    <div class="disclosure">As an Amazon Associate, I earn from qualifying purchases.</div>
+	&copy; {today.getFullYear()} brando.fm. all rights reserved.
+	<div class="disclosure">as an amazon associate, i earn from qualifying purchases.</div>
 </footer>
 <style>
 	footer {
 		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
+		background: var(--paper);
 		color: rgb(var(--gray));
 		text-align: center;
+		border-top: 1px solid var(--rule);
 	}
 	.disclosure { margin-top: .75rem; font-size: .9rem; color: rgb(var(--gray-dark)); }
 	.social-links {
