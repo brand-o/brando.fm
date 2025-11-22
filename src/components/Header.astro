@@ -5,8 +5,8 @@ const [brandRoot, brandTld] = SITE_TITLE.split('.', 2);
 ---
 
 <header>
-	<nav>
-		<h2 class="brand"><a href="/">{brandRoot}.<span class="brand-dot">{brandTld}</span></a></h2>
+    <nav>
+        <h2 class="brand"><a href="/" data-text={`${brandRoot}.${brandTld}`}>{brandRoot}<span class="brand-sep">.</span><span class="brand-dot">{brandTld}</span></a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">home</HeaderLink>
 			<HeaderLink href="/blog?type=review">reviews</HeaderLink>
@@ -15,18 +15,25 @@ const [brandRoot, brandTld] = SITE_TITLE.split('.', 2);
 	</nav>
 </header>
 <style>
-	header { margin: 0; padding: 0 1em; background: var(--paper); border-bottom: 1px solid var(--rule); position: relative; }
-	/* subtle texture overlay */
-	header::before { content:""; position:absolute; inset:0; pointer-events:none; opacity:.12; background-image: radial-gradient(rgba(0,0,0,.08) 1px, transparent 1px); background-size: 6px 6px; }
-	h2 { margin: 0; font-size: 1em; position: relative; display: inline-block; }
-	h2 a, h2 a.active { text-decoration: none; color: rgb(var(--black)); }
-	.brand .brand-dot { color: var(--accent); }
-	/* noise over brand text */
-	.brand::before { content:""; position:absolute; inset:-4px -6px; pointer-events:none; mix-blend-mode:multiply; opacity:.18; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.35'/></svg>"); background-size:160px 160px; }
-	/* halftone drop under brand (no vignette) */
-	.brand::after { content:""; position:absolute; left:0; right:0; top:100%; height:10px; background-image:radial-gradient(rgba(0,0,0,.1) .7px, transparent .7px); background-size:7px 7px; opacity:.25; filter: blur(.2px) contrast(.9); pointer-events:none; }
+    header { margin: 0; padding: 0 1em; background: var(--paper); border-bottom: 1px solid var(--rule); position: relative; }
+    /* surface texture */
+    header::before { content:""; position:absolute; inset:0; pointer-events:none; opacity:.12; background-image: radial-gradient(rgba(0,0,0,.08) 1px, transparent 1px); background-size: 6px 6px; }
+    h2 { margin: 0; font-size: 1.15em; position: relative; display: inline-block; }
+    h2 a, h2 a.active { text-decoration: none; color: rgb(var(--black)); position: relative; display: inline-block; }
+    .brand .brand-dot, .brand .brand-sep { color: var(--accent); }
+    /* per-letter halftone drop shadow masked to text */
+    .brand a::after {
+        content: attr(data-text);
+        position: absolute; left: 0; top: 0;
+        transform: translateY(2px);
+        color: transparent;
+        background-image: radial-gradient(rgba(0,0,0,.12) .8px, transparent .8px);
+        background-size: 7px 7px;
+        -webkit-background-clip: text; background-clip: text;
+        opacity: .45; pointer-events: none;
+    }
 
-	nav { display: flex; align-items: center; justify-content: space-between; }
+    nav { display: flex; align-items: center; justify-content: space-between; }
 	nav a { padding: 1em 0.5em; color: var(--ink); border-bottom: 2px solid transparent; text-decoration: none; }
 	nav a.active { border-bottom-color: var(--accent); }
 	.social-links, .social-links a { display: flex; }

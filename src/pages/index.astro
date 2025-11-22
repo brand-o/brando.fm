@@ -3,6 +3,10 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { getCollection } from 'astro:content';
+
+const all = await getCollection('blog');
+const projects = all.filter((p) => p.data.type === 'project').sort((a,b) => b.data.pubDate.valueOf()-a.data.pubDate.valueOf()).slice(0,2);
 ---
 
 <!doctype html>
@@ -13,11 +17,32 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>brando.fm</h1>
-			<p>
-				enjoy your stay
-			</p>
+			<section class="hero-copy">
+				<h1>hands-on reviews, side projects, and diy builds.</h1>
+				<p class="sub">parts you can buy to diy — plus writeups and videos.</p>
+			</section>
+			<section class="grid">
+				{projects.map((post) => (
+					<a class="card" href={`/blog/${post.id}/`}>
+						<h3>{post.data.title}</h3>
+						<p>{post.data.description}</p>
+					</a>
+				))}
+			</section>
+			<p class="more"><a href="/blog?type=project">see all projects →</a></p>
 		</main>
 		<Footer />
 	</body>
 </html>
+<style>
+  .hero-copy { margin-bottom: 1.5rem; }
+  .hero-copy h1 { font-size: 1.6em; }
+  .hero-copy .sub { color: rgb(var(--gray)); margin: .3rem 0 0; }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+  .card { display:block; padding: 1rem; border: 1px solid var(--rule); background: var(--paper); position: relative; color: inherit; text-decoration: none; }
+  .card::before { content:""; position:absolute; inset:0; pointer-events:none; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.35'/></svg>"); background-size:180px 180px; opacity:.08; mix-blend-mode:multiply; }
+  .card h3 { margin: 0 0 .3rem 0; font-size: 1.15em; }
+  .card p { margin: 0; color: rgb(var(--gray)); }
+  .more { margin-top: 1rem; }
+  @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } }
+</style>
