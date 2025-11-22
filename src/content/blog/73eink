@@ -1,0 +1,151 @@
+---
+title: "I Built a 7.3″ E-Ink Flight Calendar Using Parts From Amazon"
+description: "A minimalist desk display that pulls my airline schedule and updates automatically. Built using a 7.3'' e-ink panel, a Raspberry Pi, and a simple picture frame."
+publishDate: 2025-02-20
+tags: ["project", "diy", "pilot", "tech", "home-automation"]
+---
+
+# I Built a 7.3″ E-Ink Flight Calendar Using Parts From Amazon
+
+I wake up insanely early most days, and keeping track of duty periods, overnights, and next-day show times gets old fast. I wanted a clean, always-on display that shows:
+
+- Today’s duty period  
+- Tomorrow’s show time  
+- Flight numbers + block times  
+- Color-coded “on/off duty”  
+- A simple weekly layout  
+
+No tapping through apps.  
+No unlocking my phone at 4 AM.  
+Just a quiet little display sitting on my desk.
+
+So I built one — using **Amazon parts** and a small bit of Python.
+
+---
+
+## 🧩 Parts List (Exact Products I Used)
+
+### **7.3″ E-Ink Display**  
+I used this exact one:  
+https://a.co/d/dtor0Sc
+
+### **Picture Frame (5×7)**  
+This is the clean wood frame mine sits in:  
+https://www.amazon.com/dp/B0CMC9232L
+
+### **Raspberry Pi (Primary device driving the e-ink)**  
+This powers the display and generates the images:  
+https://a.co/d/0m6T9oE
+
+### **Optional: Orange Pi (Secondary webserver for JSON schedule data)**  
+You *don’t* need this — I just used it as a tiny backend that serves my schedule JSON:  
+https://a.co/d/dP2wpP2
+
+### Other small components:
+- 32GB microSD card  
+- USB-C power adapter  
+- Short right-angle cable (keeps it clean in the frame)  
+
+---
+
+## 🛠️ Why I Built It
+
+I’m a pilot. That means ever-changing show times, overnights, and duty periods. The airline app works, but:
+
+- it’s too bright at 4 AM  
+- too many taps  
+- not visible across the room  
+- no “at-a-glance” clarity  
+- no minimalist version that just shows the essentials  
+
+I wanted something that runs quietly in the background and gives me the **only information that matters**.
+
+E-ink is perfect for this:
+- Almost **no power draw**  
+- Always visible  
+- Looks good on a desk  
+- Refreshes without being distracting  
+
+---
+
+## 🏗️ Hardware Build
+
+The build is simpler than it looks.
+
+### **1. Flash the Raspberry Pi OS**
+I used Raspberry Pi OS Lite on a 32GB microSD.  
+Flashed with Balena Etcher.
+
+### **2. Fit the E-Ink Panel Into the Frame**
+The 7.3″ panel fits inside a 5×7 frame almost perfectly.
+
+I removed the frame backing, placed the panel inside, and used a tiny bit of electrical tape to hold it.
+
+### **3. Route the Cable**
+A short right-angle USB-C cable runs neatly out the back and into the Pi.
+
+### **4. Mount the Pi**
+Mine sits behind the frame with two small pieces of Velcro, invisible from the front.
+
+### **5. Power**
+A simple 5V/2A adapter powers the whole setup.
+
+The whole thing draws barely anything — you can leave it plugged in 24/7.
+
+---
+
+## 💻 Software Setup
+
+### **Raspberry Pi Duties:**
+- Fetch today + tomorrow’s flight schedule  
+- Render it into a PNG  
+- Push the PNG to the e-ink display  
+- Refresh every 20 minutes  
+
+### **Orange Pi Duties (optional):**
+- I run a tiny Flask server on it that returns a JSON version of my work schedule  
+- The Raspberry Pi fetches that JSON and turns it into the display image  
+
+You can skip this entirely and have the Raspberry Pi:
+- log in to your scheduling app  
+- fetch the calendar
+- draw the PNG  
+- update the screen  
+
+### **Rendering the Calendar**
+
+Mine shows:
+- duty period  
+- show times  
+- block in/out  
+- overnights  
+- rest periods  
+- AM/PM color coding  
+
+Clean, minimal, and easy to understand at a glance.
+
+---
+
+## 🖼️ Final Look
+
+The finished display looks like a little piece of modern desk art — not a DIY project.
+
+I’ll embed the video once I film it, but here’s the idea:
+
+- White background  
+- Airline-style typography  
+- Color accents  
+- Auto updates  
+
+Perfect on a nightstand or desk.
+
+---
+
+## 📺 Video Walkthrough
+
+*(Embed your YouTube Short here when it’s ready.)*
+
+Example:
+
+```html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" />
