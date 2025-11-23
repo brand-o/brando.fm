@@ -65,21 +65,21 @@ price grading always appears *last* because it’s relative to everything above 
 **image:**  
 ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg)
 
+**cpu: intel n150**  
+`+` plenty for routing, docker, home assistant, nas, and minecraft
 
-`+` **cpu: intel n150**  plenty for routing, docker, home assistant, nas, and minecraft
-`+` **ram: 12gb ddr5**  more than enough for this workload
-`++` **storage: six m.2 nvme slots**  unmatched expandability at this size and price
-`+` **networking: 2× 2.5gbe**  perfect for router + lan
-`+` **included storage: 2tb nvme**  real value-added, lowers effective cost
-`++` **size/cleanliness:**  internal power supply, clean internal layout, perfect for mini rack builds
+**ram: 12gb ddr5**  
+`+` more than enough for this workload
 
-**price: $279.20**  
-`+` very fair considering the included 2tb nvme and 6-bay expandability  
+**storage: six m.2 nvme slots**  
+`++` unmatched expandability at this size and price
 
-**brando score: 8/10**  
+**networking: 2× 2.5gbe**  
 `+` perfect for router + lan
+
 **included storage: 2tb nvme**  
 `+` real value-added, lowers effective cost
+
 **size/cleanliness:**  
 `++` internal power supply, clean internal layout, perfect for mini rack builds
 
@@ -98,14 +98,19 @@ my final pick.
 
 **cpu: intel n150**  
 `+` great for lightweight homelab tasks
+
 **ram: 12gb ddr5**  
 `+` enough for router + ha + docker
+
 **storage: one nvme slot**  
 `-` severely limits long-term expansion
+
 **networking: 2× 2.5gbe**  
 `+` router-capable
+
 **included storage: none**  
 `-` you supply everything
+
 **size/cleanliness:**  
 `+` compact, simple 
 
@@ -124,16 +129,22 @@ best bang-for-buck if storage doesn’t matter.
 
 **cpu: intel n150**  
 `+` solid for most homelab tasks
+
 **ram: 12gb ddr5**  
 `+` good
+
 **storage: 1× nvme + emmc**  
 `-` the emmc is useless; only one real slot
+
 **networking: 2× 2.5gbe**  
 `+` router-capable
+
 **included storage: 512gb nvme**  
 `+` useful starter drive
+
 **size/cleanliness:**  
 `+` very compact
+
 **price: $229.99**  
 `·` not bad, but weaker storage story compared to similarly-priced options  
 
@@ -149,14 +160,19 @@ only good if you don’t care about expansion.
 
 **cpu: intel n95**  
 `·` usable but noticeably weaker than n150
+
 **ram: 12gb ddr5**  
 `+` fine for daily services
+
 **storage: one nvme slot**  
 `-` caps expansion early
+
 **networking: 2× 2.5gbe**  
 `+` router-ready
+
 **included storage: 1tb nvme**  
 `+` solid included drive
+
 **size/cleanliness:**  
 `+` clean and compact
 
@@ -174,14 +190,19 @@ only good if you don’t care about expansion.
 
 **cpu: intel n100**  
 `·` usable but weaker than n95/n150
+
 **ram: none (barebones)**  
 `--` significantly increases real cost
+
 **storage: five nvme slots**  
 `++` excellent expandability at this price
+
 **networking: 4× 2.5gbe**  
 `++` great for multi-vlan/router playground setups
+
 **included storage: none**  
 `--` more cost on top
+
 **size/cleanliness:**  
 `+` small, easy to place
 
