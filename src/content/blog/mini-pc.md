@@ -54,7 +54,7 @@ below is a quick comparison table to preview all five contenders.
 `+` **price: $279.20** — strong value considering the storage and expandability  
 
 **brando score: 8/10**  
-my final pick.
+my final pick. overall the best value for the price.
 
 ---
 
@@ -71,8 +71,8 @@ my final pick.
 `+` size/cleanliness: super compact<br><br>
 `++` **price: $165** — one of the best deals in this category  
 
-**brando score: 7/10**  
-best value if storage doesn’t matter.
+**brando score: 6/10**  
+great value if storage expandability doesn’t matter.
 
 ---
 
@@ -87,10 +87,10 @@ best value if storage doesn’t matter.
 `+` networking: **2x 2.5Gbe** — router-ready<br>
 `+` included ssd: **512GB NVMe** — decent starter drive<br>
 `+` size/cleanliness: not the prettiest, but it's fine<br><br>
-`·` **price: $229.99** — okay, but weaker storage story than competitors  
+`·` **price: $229.99** — okay, but less storage than competitors and less expandability.
 
-**brando score: 6/10**  
-only makes sense if you don’t care about future storage.
+**brando score: 7/10**  
+great alternative to the Beelink ME Mini N150 if you don’t want the included 2TB NVMe or 6x NVMe slots.
 
 ---
 
@@ -107,7 +107,8 @@ only makes sense if you don’t care about future storage.
 `++` size/cleanliness: internal power supply, very clean internals, awesome looking<br><br>
 `-` **price: $236.55** — for a little more you can get a better cpu and an additional 1tb of storage
 
-**brando score: 6.5/10**
+**brando score: 6/10**
+the best option if you don’t want the extra power or storage from the Beelink ME Mini N150 2TB.
 
 ---
 
@@ -125,7 +126,7 @@ only makes sense if you don’t care about future storage.
 `-` **price: $220** — becomes overpriced once ram + nvme are added
 
 **brando score: 5/10**  
-great for router labs, not ideal for an all-in-one homelab.
+perfect for router labs, but not ideal for an all-in-one homelab when you factor the total price.
 
 ---
 
@@ -144,6 +145,7 @@ it hit every requirement:
 - enough cpu for docker, home assistant, opnsense, minecraft, and more  
 - included 2tb nvme  
 - zero external storage clutter  
+- price is the sweet spot for everything included
 
 ---
 
