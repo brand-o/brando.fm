@@ -96,26 +96,19 @@ my final pick.
 **image:**  
 ![](https://m.media-amazon.com/images/I/61OqcyvrpeL._AC_SL1500_.jpg)
 
-**cpu: intel n150**  
-`+` great for lightweight homelab tasks
+**cpu: intel n150**  `+`  great for lightweight homelab tasks
 
-**ram: 12gb ddr5**  
-`+` enough for router + ha + docker
+**ram: 12gb ddr5**  `+` enough for router + ha + docker
 
-**storage: one nvme slot**  
-`-` severely limits long-term expansion
+**storage: one nvme slot**  `-` severely limits long-term expansion
 
-**networking: 2× 2.5gbe**  
-`+` router-capable
+**networking: 2× 2.5gbe**  `+` router-capable
 
-**included storage: none**  
-`-` you supply everything
+**included storage: none**  `-` you supply everything
 
-**size/cleanliness:**  
-`+` compact, simple 
+**size/cleanliness:**  `+` compact, simple 
 
-**price: $165**  
-`++` an extremely good deal for an n150 mini pc  
+**price: $165**  `++` an extremely good deal for an n150 mini pc  
 
 **brando score: 7/10**  
 best bang-for-buck if storage doesn’t matter.
