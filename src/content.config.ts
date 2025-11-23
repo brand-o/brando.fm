@@ -10,7 +10,7 @@ const blog = defineCollection({
 			pubDate: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),
 			heroImage: image().optional(),
-			type: z.enum(['review', 'project', 'post']).default('post'),
+			type: z.enum(['review', 'project', 'shopping', 'post']).default('post'),
 			tags: z.array(z.string()).default([]),
 			rating: z.number().min(1).max(5).optional(),
 			affiliateLinks: z

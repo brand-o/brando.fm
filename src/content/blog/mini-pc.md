@@ -2,6 +2,7 @@
 title: "when building a new nas, which mini pc should i get?"
 description: "deciding on which mini pc to use for my new home server nas build"
 pubDate: 2025-11-23
+type: shopping
 tags: ["project", "nas", "mini-pc", "tech", "diy", "home-server"]
 ---
 

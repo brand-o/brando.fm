@@ -1,31 +1,89 @@
 ---
-import { SITE_TITLE } from '../consts';
-import HeaderLink from './HeaderLink.astro';
-const [brandRoot, brandTld] = SITE_TITLE.split('.', 2);
+import { SITE_TITLE } from "../consts";
+import HeaderLink from "./HeaderLink.astro";
+const [brandRoot, brandTld] = SITE_TITLE.split(".", 2);
 ---
 
 <header>
     <nav>
-        <h2 class="brand"><a class="grainy-shadow" href="/" data-text={`${brandRoot}.${brandTld}`}>{brandRoot}<span class="brand-sep">.</span><span class="brand-dot">{brandTld}</span></a></h2>
-		<div class="internal-links">
-			<HeaderLink href="/">home</HeaderLink>
-			<HeaderLink href="/blog?type=review">reviews</HeaderLink>
-			<HeaderLink href="/blog?type=project">projects</HeaderLink>
-		</div>
-	</nav>
+        <h2 class="brand">
+            <a
+                class="grainy-shadow"
+                href="/"
+                data-text={`${brandRoot}.${brandTld}`}
+                >{brandRoot}<span class="brand-sep">.</span><span
+                    class="brand-dot">{brandTld}</span
+                ></a>
+        </h2>
+        <div class="internal-links">
+            <HeaderLink href="/">home</HeaderLink>
+            <HeaderLink href="/blog?type=review">reviews</HeaderLink>
+            <HeaderLink href="/blog?type=project">projects</HeaderLink>
+            <HeaderLink href="/blog?type=shopping">shopping</HeaderLink>
+        </div>
+    </nav>
 </header>
 <style>
-    header { margin: 0; padding: 0 1em; background: var(--paper); border-bottom: 1px solid var(--rule); position: relative; }
+    header {
+        margin: 0;
+        padding: 0 1em;
+        background: var(--paper);
+        border-bottom: 1px solid var(--rule);
+        position: relative;
+    }
     /* surface texture */
-    header::before { content:""; position:absolute; inset:0; pointer-events:none; opacity:.12; background-image: radial-gradient(rgba(0,0,0,.08) 1px, transparent 1px); background-size: 6px 6px; }
-    h2 { margin: 0; font-size: 1.15em; position: relative; display: inline-block; }
-    h2 a, h2 a.active { text-decoration: none; color: rgb(var(--black)); position: relative; display: inline-block; }
-    .brand .brand-dot, .brand .brand-sep { color: var(--accent); }
+    header::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.12;
+        background-image: radial-gradient(
+            rgba(0, 0, 0, 0.08) 1px,
+            transparent 1px
+        );
+        background-size: 6px 6px;
+    }
+    h2 {
+        margin: 0;
+        font-size: 1.45em;
+        position: relative;
+        display: inline-block;
+    }
+    h2 a,
+    h2 a.active {
+        text-decoration: none;
+        color: rgb(var(--black));
+        position: relative;
+        display: inline-block;
+    }
+    .brand .brand-dot,
+    .brand .brand-sep {
+        color: var(--accent);
+    }
     /* remove prior per-letter halftone; grainy-shadow utility handles drop */
 
-    nav { display: flex; align-items: center; justify-content: space-between; }
-	nav a { padding: 1em 0.5em; color: var(--ink); border-bottom: 2px solid transparent; text-decoration: none; }
-	nav a.active { border-bottom-color: var(--accent); }
-	.social-links, .social-links a { display: flex; }
-	@media (max-width: 720px) { .social-links { display: none; } }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav a {
+        padding: 1em 0.5em;
+        color: var(--ink);
+        border-bottom: 2px solid transparent;
+        text-decoration: none;
+    }
+    nav a.active {
+        border-bottom-color: var(--accent);
+    }
+    .social-links,
+    .social-links a {
+        display: flex;
+    }
+    @media (max-width: 720px) {
+        .social-links {
+            display: none;
+        }
+    }
 </style>

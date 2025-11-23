@@ -180,5 +180,20 @@ if (videoUrl) {
 			</article>
 		</main>
 		<Footer />
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const codes = document.querySelectorAll('.prose code');
+				codes.forEach(code => {
+					const text = code.textContent?.trim();
+					if (text === '+' || text === '++') {
+						code.classList.add('grade-tag', 'green');
+					} else if (text === '·') {
+						code.classList.add('grade-tag', 'gray');
+					} else if (text === '-' || text === '--') {
+						code.classList.add('grade-tag', 'red');
+					}
+				});
+			});
+		</script>
 	</body>
 </html>
