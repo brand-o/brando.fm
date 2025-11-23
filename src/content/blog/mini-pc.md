@@ -1,3 +1,10 @@
+---
+title: "when building a new nas, which mini pc should i get?"
+description: "deciding on which mini pc to use for my new home server nas build"
+pubDate: 2025-11-23
+tags: ["project", "nas", "mini-pc", "tech", "diy", "home-server"]
+---
+
 # building my new home network: why i chose the beelink n150 6-bay nas mini pc
 
 we’re moving soon, so this felt like the perfect time to rebuild my entire home network from scratch. after years of collecting files across random external drives, using normie routers, and patching together “nas” solutions with whatever hardware was nearby, i wanted to do this properly.
