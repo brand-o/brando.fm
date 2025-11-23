@@ -9,7 +9,7 @@ tags: ["project", "nas", "mini-pc", "tech", "diy", "home-server"]
 # building my new home network: why i chose the beelink n150 6-bay nas mini pc
 
 this is the full breakdown of every mini pc i considered for my home rack.  
-the goal: an always-on machine for routing, storage, docker, home automation, and a minecraft server.
+the goal: an always-on machine for routing, storage, docker, home automation, and a Minecraft server.
 
 below is a quick comparison table to preview all five contenders.
 
@@ -32,11 +32,11 @@ below is a quick comparison table to preview all five contenders.
 
 # what i needed
 
-- fast enough to run opnsense/pfsense, docker, home assistant, syncthing, and a minecraft server for my kids and me (mostly me)
+- fast enough to run OPNsense/PFSense, Docker, Home Assistant, Syncthing, and a Minecraft server for my kids and me (mostly me)
 - low power (always on)  
 - future-proof  
 - expandable internal storage  
-- dual 2.5gbe or better  
+- dual 2.5Gbe or better  
 
 ---
 
@@ -137,13 +137,13 @@ https://a.co/d/38gtPpa
 
 it hit every requirement:
 
-- six nvme slots  
+- six NVMe slots  
 - internal power supply  
-- dual 2.5gbe  
+- dual 2.5Gbe  
 - clean internals  
 - low power draw  
-- enough cpu for docker, home assistant, opnsense, minecraft, and more  
-- included 2tb nvme  
+- enough CPU for Docker, Home Assistant, OPNsense, Minecraft, and more  
+- included 2tb NVMe  
 - zero external storage clutter  
 - price is the sweet spot for everything included
 
@@ -153,7 +153,7 @@ it hit every requirement:
 
 **aoostar n1 pro n150**  
 https://a.co/d/f5DZfaY  
-best deal per dollar, but not enough internal storage for this build.
+best deal per dollar, but not enough expandable storage for this build.
 
 ---
 
@@ -161,12 +161,12 @@ best deal per dollar, but not enough internal storage for this build.
 
 **generic n100 5×nvme / 4×lan**  
 https://a.co/d/2RLpDBq  
-incredibly flexible, but too expensive once you add ram and an nvme.
+incredibly flexible, but too expensive once you add ram and an NVMe.
 
 ---
 
 # final thoughts
 
 if you only need 1–2 nvme drives, cheaper models make sense.  
-but if you want a clean, expandable, long-term, always-on homelab brain with no external storage nonsense, the **beelink n150 6-bay** is the clear winner.
+but if you want a clean, expandable, long-term, always-on homelab brain with no external storage nonsense, the **Beelink ME Mini N150** is the clear winner.
 
