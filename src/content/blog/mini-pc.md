@@ -9,7 +9,7 @@ tags: ["project", "nas", "mini-pc", "tech", "diy", "home-server"]
 # building my new home network: why i chose the beelink n150 6-bay nas mini pc
 
 this is the full breakdown of every mini pc i considered for my home rack.  
-the goal: an always-on machine for routing, storage, docker, home automation, and a Minecraft server.
+the goal: an always-on machine for routing, storage, Docker, Home Assistant, Syncthing, and a Minecraft server for my kids and me (mostly me).
 
 below is a quick comparison table to preview all five contenders.
 
