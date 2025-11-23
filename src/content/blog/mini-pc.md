@@ -6,245 +6,220 @@ type: shopping
 tags: ["project", "nas", "mini-pc", "tech", "diy", "home-server"]
 ---
 
+
 # building my new home network: why i chose the beelink n150 6-bay nas mini pc
 
-we’re moving soon, so this felt like the perfect time to rebuild my entire home network from scratch. after years of collecting files across random external drives, using normie routers, and patching together “nas” solutions with whatever hardware was nearby, i wanted to do this properly.
+this is the full breakdown of every mini pc i considered for my home rack.  
+the goal: an always-on machine for routing, storage, docker, home automation, and a minecraft server.
 
-my plan: build a compact mini rack that handles everything i actually use every day.
-
-the core requirements were simple:
-
-1. expandable, fast network storage  
-2. home automation with homekit integration  
-3. a minecraft server for my kids and me <small>(mostly me)</small>  
-4. a router with adblock, privacy tools, and vlans  
-5. something reliable to tinker with long-term  
-
-the heart of all this is an always-on mini pc. it needed to be efficient, expandable, clean, and reliable.
-
-this is the breakdown of what i needed, the machines i compared, and why i landed on the beelink n150 with six nvme slots.
+below is a quick comparison table to preview all five contenders.
 
 ---
 
-# what the mini pc needed to be
+# comparison table
 
-- fast enough for routing, docker, automation, and light game hosting  
-- low power, always on  
-- future-proof for several years  
-- internal storage expansion (multiple NVMes preferred)  
-- at least dual 2.5GbE  
-- compact and clean internally  
-- reliable for 24/7 operation  
-
-not many mini pcs hit all of these at once.
+| model | image | cpu | ram | storage (internal) | lan | included ssd | price | link |
+|-------|--------|-----|------|----------------------|------|----------------|--------|-------|
+| **aoostar n1 pro n150** | ![](https://m.media-amazon.com/images/I/61OqcyvrpeL._AC_SL1500_.jpg) | intel n150 | 12gb ddr5 | 1× m.2 nvme | 2× 2.5gbe | 0gb | $165 | https://a.co/d/f5DZfaY |
+| **beelink me mini n150 (6-bay)** | ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg) | intel n150 | 12gb ddr5 | 6× m.2 nvme | 2× 2.5gbe | 2tb nvme | $279.20 | https://a.co/d/38gtPpa |
+| **gmktec g9 n150** | ![](https://m.media-amazon.com/images/I/61ECn8BFbGL._AC_SL1500_.jpg) | intel n150 | 12gb ddr5 | 1× m.2 nvme + emmc | 2× 2.5gbe | 512gb nvme | $229.99 | https://a.co/d/hO3vfGU |
+| **beelink me mini n95** | ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg) | intel n95 | 12gb ddr5 | 1× m.2 nvme | 2× 2.5gbe | 1tb nvme | $236.55 | https://a.co/d/4p9MgqI |
+| **generic mini pc n100 (5× nvme, 4× lan)** | ![](https://m.media-amazon.com/images/I/51sD8t6GUwL._AC_SL1000_.jpg) | intel n100 | barebones | 5× m.2 nvme | 4× 2.5gbe | none | $220 | https://a.co/d/2RLpDBq |
 
 ---
 
-# the contenders  
+# what i needed
+
+- fast enough to run opnsense/pfsense, docker, home assistant, syncthing, and a minecraft server  
+- low power (always on)  
+- future-proof  
+- expandable internal storage  
+- dual 2.5gbe or better  
+- clean internal layout  
+- stable for 24/7 operation  
+
+my goal was to avoid usb storage, external nvme enclosures, and messy wiring. internal nvme slots mattered a lot.
+
+---
+
+# contender breakdown  
 grading key:
 
-- green `+` = good  
-- green `++` = really good  
-- gray `·` = neutral / doesn’t matter here  
-- red `-` = bad  
-- red `--` = very bad  
+- `+` = good  
+- `++` = really good  
+- `·` = neutral  
+- `-` = bad  
+- `--` = very bad  
 
-each machine gets a “brando score” out of 10.
+price grading always appears *last* because it’s relative to everything above it.
 
 ---
 
-## 1. beelink me mini n150 (6 NVMe slots + 2TB NVMe included)  
-link: https://a.co/d/8gbPD5W
+## 1. beelink me mini n150 – 6 nvme slots – 12GB DDR5 – dual 2.5GbE  
+**link:** https://a.co/d/38gtPpa  
+**image:**  
+![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg)
 
-**cpu: intel N150**  
-`+` strong for routing, docker, home assistant, storage, and minecraft
-
-**ram: 12GB DDR5**  
-`+` more than enough for this role
-
-**storage: six M.2 NVMe slots**  
-`++` unmatched expandability in this size
-
-**networking: dual 2.5GbE**  
-`+` exactly what i need for router + lan
-
-**power supply: internal**  
-`+` no external power brick clutter
-
-**included drive: 2TB NVMe**  
-`+` adds real usable value out of the box
-
+**cpu: intel n150**  
+`+` plenty for routing, docker, home assistant, nas, and minecraft
+**ram: 12gb ddr5**  
+`+` more than enough for this workload
+**storage: six m.2 nvme slots**  
+`++` unmatched expandability at this size and price
+**networking: 2× 2.5gbe**  
+`+` perfect for router + lan
+**included storage: 2tb nvme**  
+`+` real value-added, lowers effective cost
 **size/cleanliness:**  
-`++` very clean layout, perfect for a mini rack
-
-**price: $280**  
-`+` fair for the specs and the included 2TB NVMe, strong long-term value  
+`++` internal power supply, clean internal layout, perfect for mini rack builds
+**price: $279.20**  
+`+` very fair considering the included 2tb nvme and 6-bay expandability  
 
 **brando score: 8/10**  
-this is the one i chose.
+my final pick.
 
 ---
 
-## 2. beelink me mini n150 (alternate model, fewer NVMe slots)  
-link: https://a.co/d/0EWAZky
+## 2. aoostar n1 pro n150 – 12GB DDR5 – dual 2.5GbE – 1× NVMe  
+**link:** https://a.co/d/f5DZfaY  
+**image:**  
+![](https://m.media-amazon.com/images/I/61OqcyvrpeL._AC_SL1500_.jpg)
 
-**cpu: intel N150**  
-`+` same solid performance as the top pick
-
-**ram: 12GB DDR5**  
-`+` plenty for this workload
-
-**storage: fewer NVMe slots**  
-`-` limits long-term growth
-
-**networking: dual 2.5GbE**  
-`+` good, still router-capable
-
-**included storage: small or none**  
-`·` depends on whether you already have drives
-
+**cpu: intel n150**  
+`+` great for lightweight homelab tasks
+**ram: 12gb ddr5**  
+`+` enough for router + ha + docker
+**storage: one nvme slot**  
+`-` severely limits long-term expansion
+**networking: 2× 2.5gbe**  
+`+` router-capable
+**included storage: none**  
+`-` you supply everything
 **size/cleanliness:**  
-`+` compact and simple
-
-**price: $230**  
-`+` strong overall value, especially if you don’t need many NVMes  
+`+` compact, simple
+**price: $165**  
+`++` an extremely good deal for an n150 mini pc  
 
 **brando score: 7/10**  
-great balance of power and cost if storage isn’t a priority.
+best bang-for-buck if storage doesn’t matter.
 
 ---
 
-## 3. gmktec mini pc (single NVMe slot, N95 or N150)  
-link: https://a.co/d/iJmGp6v
+## 3. gmktec g9 n150 – 12GB DDR5 – dual 2.5GbE – NVMe + eMMC  
+**link:** https://a.co/d/hO3vfGU  
+**image:**  
+![](https://m.media-amazon.com/images/I/61ECn8BFbGL._AC_SL1500_.jpg)
 
-**cpu: intel N95 or N150**  
-`·` usable but not ideal for heavier multi-service setups
-
-**ram: 12GB**  
-`+` enough for router + light services
-
-**storage: one NVMe slot**  
-`--` bottleneck for anyone needing internal expansion
-
-**networking: dual 2.5GbE**  
-`+` solid, router-ready
-
-**included storage: 1TB NVMe**  
-`+` nice starter drive included
-
+**cpu: intel n150**  
+`+` solid for most homelab tasks
+**ram: 12gb ddr5**  
+`+` good
+**storage: 1× nvme + emmc**  
+`-` the emmc is useless; only one real slot
+**networking: 2× 2.5gbe**  
+`+` router-capable
+**included storage: 512gb nvme**  
+`+` useful starter drive
 **size/cleanliness:**  
-`+` extremely compact
-
-**price: $235**  
-`·` not a standout deal compared to better options with more expansion  
+`+` very compact
+**price: $229.99**  
+`·` not bad, but weaker storage story compared to similarly-priced options  
 
 **brando score: 6/10**  
-fine for minimal builds, not good for long-term tinkering.
+only good if you don’t care about expansion.
 
 ---
 
-## 4. beelink mini pc (N150, multiple NVMe slots, 64GB eMMC only)  
-link: https://a.co/d/1SbdI4f
+## 4. beelink me mini n95 – 12GB DDR5 – dual 2.5GbE – 1TB NVMe  
+**link:** https://a.co/d/4p9MgqI  
+**image:**  
+![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg)
 
-**cpu: intel N150**  
-`+` solid performance for homelab tasks
-
-**ram: 12GB DDR5**  
-`+` enough for all expected services
-
-**storage: multiple NVMe slots but no NVMe included**  
-`+` expandable but requires buying drives separately
-
-**networking: dual 2.5GbE**  
-`+` router-capable
-
-**included storage: 64GB eMMC**  
-`-` basically useless for anything important
-
+**cpu: intel n95**  
+`·` usable but noticeably weaker than n150
+**ram: 12gb ddr5**  
+`+` fine for daily services
+**storage: one nvme slot**  
+`-` caps expansion early
+**networking: 2× 2.5gbe**  
+`+` router-ready
+**included storage: 1tb nvme**  
+`+` solid included drive
 **size/cleanliness:**  
-`+` clean internal layout
+`+` clean and compact
+**price: $236.55**  
+`-` too expensive for what it offers compared to other options  
 
-**price: $260**  
-`·` decent, but adding your own drives brings cost close to the $280 model with the 2TB NVMe included  
-
-**brando score: 6.5/10**  
-good if you already own NVMe drives.
+**brando score: 5.5/10**
 
 ---
 
-## 5. n100 barebones mini pc (quad 2.5GbE, upgradeable RAM)  
-link: https://a.co/d/18Seo2V
+## 5. generic n100 mini pc – 5× NVMe – 4× 2.5GbE – barebones  
+**link:** https://a.co/d/2RLpDBq  
+**image:**  
+![](https://m.media-amazon.com/images/I/51sD8t6GUwL._AC_SL1000_.jpg)
 
-**cpu: intel N100**  
-`·` acceptable but noticeably weaker
-
+**cpu: intel n100**  
+`·` usable but weaker than n95/n150
 **ram: none (barebones)**  
-`--` adds significant cost
-
-**storage: one NVMe slot**  
-`-` limited expansion
-
-**networking: 4× 2.5GbE**  
-`++` excellent for router labs or multi-vlan setups
-
+`--` significantly increases real cost
+**storage: five nvme slots**  
+`++` excellent expandability at this price
+**networking: 4× 2.5gbe**  
+`++` great for multi-vlan/router playground setups
 **included storage: none**  
 `--` more cost on top
-
 **size/cleanliness:**  
-`+` small and flexible
-
+`+` small, easy to place
 **price: $220**  
-`-` once you add RAM and an NVMe, the total cost overtakes better-spec’d machines  
+`-` becomes overpriced once you add RAM + NVMe  
 
 **brando score: 5/10**  
-great for pure router experiments, not ideal as an all-in-one home lab core.
+amazing for router labs, not ideal for an all-in-one homelab.
 
 ---
 
-# what i ended up choosing
+# what i chose
 
-the **beelink ME Mini N150 NAS mini pc** with six NVMe slots and a 2TB NVMe included:  
-https://a.co/d/8gbPD5W
+the **beelink ME Mini N150 6-bay NAS Mini PC**  
+https://a.co/d/38gtPpa
 
-it checked every box i cared about:
+it hit every requirement:
 
 - six NVMe slots  
-  - `++` long-term storage without external enclosures  
-- dual 2.5GbE  
-  - `+` perfect for my router setup  
-- low power draw  
 - internal power supply  
-- clean internal design  
-- enough CPU overhead for docker, home assistant, opnsense, minecraft, syncthing, and more  
-- the included 2TB NVMe offsets the cost nicely
+- dual 2.5GbE  
+- clean internals  
+- low power  
+- enough CPU for everything i need  
+- included 2TB NVMe makes the price better  
+- zero external storage clutter  
 
-for a 24/7 mini rack build that needs to be clean, efficient, and expandable, this was the best option.
+it’s exactly what i wanted for a long-term mini rack build.
 
 ---
 
-# the runner-up
+# runner-up
 
-**GMKtec N150 mini pc (single NVMe slot)**  
-https://a.co/d/8A3srvg
+the **aoostar N1 Pro N150**  
+https://a.co/d/f5DZfaY
 
-if i didn’t care about long-term internal storage expansion, this would’ve won. it’s tiny, cheap, and still has dual 2.5GbE. but external USB NVMe enclosures would add clutter and long-term headaches.
+best deal per dollar, but not enough storage expansion for what i’m building.
 
 ---
 
 # the one i wanted but didn’t need
 
-**barebones N100/N150 mini pcs with upgradeable RAM**  
-https://a.co/d/18Seo2V
+the **generic N100 5×NVMe / 4×LAN barebones**  
+https://a.co/d/2RLpDBq
 
-i like these machines a lot, but DDR5 pricing isn’t great right now, and this project doesn’t need more than 12GB RAM. by the time i ever need more, newer hardware will be cheaper anyway.
+super flexible, but the true cost balloons once you add RAM and NVMe.
 
 ---
 
 # final thoughts
 
-if you want simple, you can go cheaper.  
-if you want a pure router box, you can go smaller.  
+if you only need 1–2 nvme drives, the cheaper models make sense.
 
-but if you want something clean, expandable, efficient, and capable of anchoring a whole home lab for years, the **beelink n150 6-bay model** is the sweet spot.
+but if you want a clean, expandable, long-term, always-on homelab brain with no external storage nonsense, the **beelink n150 6-bay** is the clear winner.
 
-it’ll be the main brain of my new setup, and i don’t see myself replacing it anytime soon.
