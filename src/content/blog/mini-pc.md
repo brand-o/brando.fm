@@ -93,13 +93,13 @@ best value if storage doesn’t matter.
 **image:**  
 ![](https://m.media-amazon.com/images/I/61ECn8BFbGL._AC_SL1500_.jpg)
 
-`+` *cpu: intel n150* — solid for most homelab workloads<br>
-`+` *ram: 12gb ddr5* — good<br>
-`-` *storage: 1× nvme + emmc* — emmc is useless, only one real slot<br>
-`+` *networking: dual 2.5gbe* — router-ready<br>
-`+` *included ssd: 512gb nvme* — decent starter drive<br>
-`+` *size/cleanliness* — compact design<br>
-`·` *price: $229.99* — okay, but weaker storage story than competitors
+`+` **cpu: intel n150** — solid for most homelab workloads<br>
+`+` **ram: 12gb ddr5** — good<br>
+`-` **storage: 1× nvme + emmc** — emmc is useless, only one real slot<br>
+`+` **networking: dual 2.5gbe** — router-ready<br>
+`+` **included ssd: 512gb nvme** — decent starter drive<br>
+`+` **size/cleanliness** — compact design<br>
+`·` **price: $229.99** — okay, but weaker storage story than competitors
 
 **brando score: 6/10**  
 only makes sense if you don’t care about future storage.
@@ -111,13 +111,13 @@ only makes sense if you don’t care about future storage.
 **image:**  
 ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg)
 
-`-` *cpu: intel n95* — noticeably weaker than n100/n150<br>
-`+` *ram: 12gb ddr5* — enough for lightweight homelab tasks<br>
-`-` *storage: one nvme slot* — limits expansion quickly<br>
-`+` *networking: dual 2.5gbe* — router-grade<br>
-`+` *included ssd: 1tb nvme* — solid included drive<br>
-`+` *size/cleanliness* — clean and compact<br>
-`-` *price: $236.55* — too expensive for what it offers
+`-` **cpu: intel n95** — noticeably weaker than n100/n150<br>
+`+` **ram: 12gb ddr5** — enough for lightweight homelab tasks<br>
+`-` **storage: one nvme slot** — limits expansion quickly<br>
+`+` **networking: dual 2.5gbe** — router-grade<br>
+`+` **included ssd: 1tb nvme** — solid included drive<br>
+`+` **size/cleanliness** — clean and compact<br>
+`-` **price: $236.55** — too expensive for what it offers
 
 **brando score: 5.5/10**
 
@@ -128,13 +128,13 @@ only makes sense if you don’t care about future storage.
 **image:**  
 ![](https://m.media-amazon.com/images/I/51sD8t6GUwL._AC_SL1000_.jpg)
 
-`·` *cpu: intel n100* — usable, not fast<br>
-`--` *ram: none* — adds significant cost<br>
-`++` *storage: five nvme slots* — excellent expandability<br>
-`++` *networking: 4× 2.5gbe* — great for vlan/router experiments<br>
-`--` *included ssd: none* — more cost on top<br>
-`+` *size/cleanliness* — very compact<br>
-`-` *price: $220* — becomes overpriced once ram + nvme are added
+`·` **cpu: intel n100** — usable, not fast<br>
+`--` **ram: none** — adds significant cost<br>
+`++` **storage: five nvme slots** — excellent expandability<br>
+`++` **networking: 4× 2.5gbe** — great for vlan/router experiments<br>
+`--` **included ssd: none** — more cost on top<br>
+`+` **size/cleanliness** — very compact<br>
+`-` **price: $220** — becomes overpriced once ram + nvme are added
 
 **brando score: 5/10**  
 great for router labs, not ideal for an all-in-one homelab.
