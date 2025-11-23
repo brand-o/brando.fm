@@ -77,6 +77,7 @@ price grading always appears *last* because it’s relative to everything above 
 `+` real value-added, lowers effective cost
 **size/cleanliness:**  
 `++` internal power supply, clean internal layout, perfect for mini rack builds
+
 **price: $279.20**  
 `+` very fair considering the included 2tb nvme and 6-bay expandability  
 
@@ -101,7 +102,8 @@ my final pick.
 **included storage: none**  
 `-` you supply everything
 **size/cleanliness:**  
-`+` compact, simple
+`+` compact, simple 
+
 **price: $165**  
 `++` an extremely good deal for an n150 mini pc  
 
@@ -152,6 +154,7 @@ only good if you don’t care about expansion.
 `+` solid included drive
 **size/cleanliness:**  
 `+` clean and compact
+
 **price: $236.55**  
 `-` too expensive for what it offers compared to other options  
 
@@ -176,6 +179,7 @@ only good if you don’t care about expansion.
 `--` more cost on top
 **size/cleanliness:**  
 `+` small, easy to place
+
 **price: $220**  
 `-` becomes overpriced once you add RAM + NVMe  
 
