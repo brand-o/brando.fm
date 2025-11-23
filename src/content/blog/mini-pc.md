@@ -1,6 +1,6 @@
 ---
-title: "when building a new nas, which mini pc should i get?"
-description: "deciding on which mini pc to use for my new home server nas build"
+title: "picking the perfect always-onmini pc for my mini rack"
+description: "finding the perfect balance between performance, price, and expandability for my home server"
 pubDate: 2025-11-23
 type: shopping
 tags: ["project", "nas", "mini-pc", "tech", "diy", "home-server"]
@@ -40,7 +40,7 @@ below is a quick comparison table to preview all five contenders.
 
 ---
 
-# 1. beelink me mini n150 — 6 nvme slots — 12gb ddr5 — dual 2.5gbe  
+# 1. Beelink ME Mini N150 — 6 NVMe slots — 12GB DDR5 — Dual 2.5Gbe  
 **link:** https://a.co/d/38gtPpa  
 **image:**  
 ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg)
@@ -58,7 +58,7 @@ my final pick. overall the best value for the price.
 
 ---
 
-# 2. Aoostar N1 Pro N150 — 12gb DDR5 — dual 2.5gbe — 1× NVMe  
+# 2. Aoostar N1 Pro N150 — 12GB DDR5 — Dual 2.5Gbe — 1× NVMe  
 **link:** https://a.co/d/f5DZfaY  
 **image:**  
 ![](https://m.media-amazon.com/images/I/61OqcyvrpeL._AC_SL1500_.jpg)
@@ -76,7 +76,7 @@ great value if storage expandability doesn’t matter.
 
 ---
 
-# 3. GMKtec G9 N150 — 12gb DDR5 — dual 2.5gbe — 4x NVMe  
+# 3. GMKtec G9 N150 — 12GB DDR5 — Dual 2.5Gbe — 4x NVMe  
 **link:** https://a.co/d/hO3vfGU  
 **image:**  
 ![](https://m.media-amazon.com/images/I/61ECn8BFbGL._AC_SL1500_.jpg)
@@ -94,7 +94,7 @@ great alternative to the Beelink ME Mini N150 if you don’t want the included 2
 
 ---
 
-# 4. Beelink ME Mini N95 — 12gb DDR5 — dual 2.5gbe — 1tb NVMe  
+# 4. Beelink ME Mini N95 — 12GB DDR5 — Dual 2.5Gbe — 1TB NVMe  
 **link:** https://a.co/d/4p9MgqI  
 **image:**  
 ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg)
@@ -112,7 +112,7 @@ the best option if you don’t want the extra power or storage from the Beelink 
 
 ---
 
-# 5. Generic N100 — 5× NVMe — 4× 2.5Gbe — barebones  
+# 5. Generic N100 — 5× NVMe — 4× 2.5Gbe — Barebones  
 **link:** https://a.co/d/2RLpDBq  
 **image:**  
 ![](https://m.media-amazon.com/images/I/51sD8t6GUwL._AC_SL1000_.jpg)
