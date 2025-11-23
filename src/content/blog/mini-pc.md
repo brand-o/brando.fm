@@ -18,13 +18,18 @@ below is a quick comparison table to preview all five contenders.
 
 # comparison table
 
-| model | image | cpu | ram | storage (internal) | lan | included ssd | price | link |
-|-------|--------|-----|------|----------------------|------|----------------|--------|-------|
-| **aoostar n1 pro n150** | ![](https://m.media-amazon.com/images/I/61OqcyvrpeL._AC_SL1500_.jpg) | intel n150 | 12gb ddr5 | 1× m.2 nvme | 2× 2.5gbe | 0gb | $165 | https://a.co/d/f5DZfaY |
-| **beelink me mini n150 (6-bay)** | ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg) | intel n150 | 12gb ddr5 | 6× m.2 nvme | 2× 2.5gbe | 2tb nvme | $279.20 | https://a.co/d/38gtPpa |
-| **gmktec g9 n150** | ![](https://m.media-amazon.com/images/I/61ECn8BFbGL._AC_SL1500_.jpg) | intel n150 | 12gb ddr5 | 1× m.2 nvme + emmc | 2× 2.5gbe | 512gb nvme | $229.99 | https://a.co/d/hO3vfGU |
-| **beelink me mini n95** | ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg) | intel n95 | 12gb ddr5 | 1× m.2 nvme | 2× 2.5gbe | 1tb nvme | $236.55 | https://a.co/d/4p9MgqI |
-| **generic mini pc n100 (5× nvme, 4× lan)** | ![](https://m.media-amazon.com/images/I/51sD8t6GUwL._AC_SL1000_.jpg) | intel n100 | barebones | 5× m.2 nvme | 4× 2.5gbe | none | $220 | https://a.co/d/2RLpDBq |
+|  | **aoostar n1 pro n150** | **beelink me mini n150 (6-bay)** | **gmktec g9 n150** | **beelink me mini n95** | **generic n100 (5× nvme, 4× lan)** |
+|---|---|---|---|---|---|
+| image | ![](https://m.media-amazon.com/images/I/61OqcyvrpeL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/61ECn8BFbGL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/51sD8t6GUwL._AC_SL1000_.jpg) |
+| cpu | intel n150 | intel n150 | intel n150 | intel n95 | intel n100 |
+| ram | 12gb ddr5 | 12gb ddr5 | 12gb ddr5 | 12gb ddr5 | barebones |
+| internal storage | 1× m.2 nvme | 6× m.2 nvme | 1× m.2 nvme + emmc | 1× m.2 nvme | 5× m.2 nvme |
+| lan ports | 2× 2.5gbe | 2× 2.5gbe | 2× 2.5gbe | 2× 2.5gbe | 4× 2.5gbe |
+| included ssd | none | 2tb nvme | 512gb nvme | 1tb nvme | none |
+| price | $165 | $279.20 | $229.99 | $236.55 | $220 |
+| link | https://a.co/d/f5DZfaY | https://a.co/d/38gtPpa | https://a.co/d/hO3vfGU | https://a.co/d/4p9MgqI | https://a.co/d/2RLpDBq |
+
+
 
 ---
 
