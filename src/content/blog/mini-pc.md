@@ -65,13 +65,18 @@ price grading always appears *last* because it’s relative to everything above 
 **image:**  
 ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg)
 
-**cpu: intel n150**  
-`+` plenty for routing, docker, home assistant, nas, and minecraft
-**ram: 12gb ddr5**  
-`+` more than enough for this workload
-**storage: six m.2 nvme slots**  
-`++` unmatched expandability at this size and price
-**networking: 2× 2.5gbe**  
+
+`+` **cpu: intel n150**  plenty for routing, docker, home assistant, nas, and minecraft
+`+` **ram: 12gb ddr5**  more than enough for this workload
+`++` **storage: six m.2 nvme slots**  unmatched expandability at this size and price
+`+` **networking: 2× 2.5gbe**  perfect for router + lan
+`+` **included storage: 2tb nvme**  real value-added, lowers effective cost
+`++` **size/cleanliness:**  internal power supply, clean internal layout, perfect for mini rack builds
+
+**price: $279.20**  
+`+` very fair considering the included 2tb nvme and 6-bay expandability  
+
+**brando score: 8/10**  
 `+` perfect for router + lan
 **included storage: 2tb nvme**  
 `+` real value-added, lowers effective cost
