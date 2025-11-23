@@ -58,11 +58,11 @@ price grading always appears *last* because it’s relative to everything above 
 ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg)
 
 `+` cpu: **intel n150** — plenty for routing, docker, home assistant, nas, and minecraft<br>
-`+` ram: **12gb ddr5** — more than enough for this workload<br>
-`++` storage: **six m.2 nvme slots** — unmatched expandability at this size<br>
-`+` networking: **dual 2.5gbe** — ideal for router + lan setup<br>
+`+` ram: **12gb ddr5** — fast efficient ddr5, 12gb should be plenty<br>
+`++` storage: **6x m.2 nvme slots** — unmatched expandability at this size<br>
+`+` networking: **2x 2.5gbe** — ideal for router + lan setup<br>
 `+` included ssd: **2tb nvme** — adds real value and reduces total cost<br>
-`++` size/cleanliness: **internal power supply, very clean internals**<br><br>
+`++` size/cleanliness: internal power supply, very clean internals, awesome looking<br><br>
 `+` **price: $279.20** — strong value considering the storage and expandability  
 
 **brando score: 8/10**  
@@ -76,11 +76,11 @@ my final pick.
 ![](https://m.media-amazon.com/images/I/61OqcyvrpeL._AC_SL1500_.jpg)
 
 `+` cpu: **intel n150** — great for lightweight homelab tasks<br>
-`+` ram: **12gb ddr5** — plenty for router + docker + ha<br>
-`-` storage: **one nvme slot** — severely limits long-term expansion<br>
-`+` networking: **dual 2.5gbe** — router-capable<br>
+`+` ram: **12gb ddr5** — fast efficient ddr5, 12gb should be plenty<br>
+`-` storage: **single nvme slot** — severely limits long-term expansion<br>
+`+` networking: **2x 2.5gbe** — router-capable<br>
 `-` included ssd: **512gb** — fair, but not useful for our project<br>
-`+` size/cleanliness: compact and simple<br><br>
+`+` size/cleanliness: super compact<br><br>
 `++` **price: $165** — one of the best deals in this category  
 
 **brando score: 7/10**  
@@ -94,11 +94,11 @@ best value if storage doesn’t matter.
 ![](https://m.media-amazon.com/images/I/61ECn8BFbGL._AC_SL1500_.jpg)
 
 `+` cpu: **intel n150** — solid for most homelab workloads<br>
-`+` ram: **12gb ddr5** — good<br>
+`+` ram: **12gb ddr5** — fast efficient ddr5, 12gb should be plenty<br>
 `-` storage: **1× nvme + emmc** — emmc is useless, only one real slot<br>
-`+` networking: **dual 2.5gbe** — router-ready<br>
+`+` networking: **2x 2.5gbe** — router-ready<br>
 `+` included ssd: **512gb nvme** — decent starter drive<br>
-`+` size/cleanliness: compact design<br><br>
+`+` size/cleanliness: not the prettiest, but it's fine<br><br>
 `·` **price: $229.99** — okay, but weaker storage story than competitors  
 
 **brando score: 6/10**  
@@ -111,15 +111,15 @@ only makes sense if you don’t care about future storage.
 **image:**  
 ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg)
 
-`-` cpu: **intel n95** — noticeably weaker than n100/n150<br>
-`+` ram: **12gb ddr5** — enough for lightweight homelab tasks<br>
-`-` storage: **one nvme slot** — limits expansion quickly<br>
-`+` networking: **dual 2.5gbe** — router-grade<br>
-`+` included ssd: **1tb nvme** — solid included drive<br>
-`+` size/cleanliness: clean and compact<br><br>
-`-` **price: $236.55** — too expensive for what it offers
+`-` cpu: **intel n95** — good enough, but limits future expansion<br>
+`+` ram: **12gb ddr5** — fast efficient ddr5, 12gb should be plenty<br>
+`++` storage: **6x m.2 nvme slots** — unmatched expandability at this size<br>
+`+` networking: **2x 2.5gbe** — ideal for router + lan setup<br>
+`+` included ssd: **2tb nvme** — adds real value and reduces total cost<br>
+`++` size/cleanliness: internal power supply, very clean internals, awesome looking<br><br>
+`-` **price: $236.55** — for a little more you can get a better cpu and an additional 1tb of storage
 
-**brando score: 5.5/10**
+**brando score: 6.5/10**
 
 ---
 
@@ -129,11 +129,11 @@ only makes sense if you don’t care about future storage.
 ![](https://m.media-amazon.com/images/I/51sD8t6GUwL._AC_SL1000_.jpg)
 
 `·` cpu: **intel n100** — usable, not fast<br>
-`--` ram: **none** — adds significant cost<br>
-`++` storage: **five nvme slots** — excellent expandability<br>
-`++` networking: **4× 2.5gbe** — great for vlan/router experiments<br>
+`-` ram: **none** — adds significant cost, but allows for future upgrades<br>
+`++` storage: **5x nvme slots** — excellent expandability<br>
+`++` networking: **4x 2.5gbe** — great for vlan/router experiments<br>
 `--` included ssd: **none** — more cost on top<br>
-`+` size/cleanliness: very compact<br><br>
+`+` size/cleanliness: all aluminum enclosure is cool, but not the prettiest<br><br>
 `-` **price: $220** — becomes overpriced once ram + nvme are added
 
 **brando score: 5/10**  
