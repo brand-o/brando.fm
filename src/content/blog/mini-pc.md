@@ -17,38 +17,26 @@ below is a quick comparison table to preview all five contenders.
 
 # comparison table
 
-|  | **aoostar n1 pro n150** | **beelink me mini n150 (6-bay)** | **gmktec g9 n150** | **beelink me mini n95** | **generic n100 (5× nvme, 4× lan)** |
+|  | **Aoostar N1 Pro N150** | **Beelink ME Mini N150** | **Gmktec G9 N150** | **Beelink ME Mini N95** | **Generic N100** |
 |---|---|---|---|---|---|
 | image | ![](https://m.media-amazon.com/images/I/61OqcyvrpeL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/61ECn8BFbGL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/51sD8t6GUwL._AC_SL1000_.jpg) |
-| cpu | intel n150 | intel n150 | intel n150 | intel n95 | intel n100 |
-| ram | 12gb ddr5 | 12gb ddr5 | 12gb ddr5 | 12gb ddr5 | barebones |
-| internal storage | 1× m.2 nvme | 6× m.2 nvme | 1× m.2 nvme + emmc | 1× m.2 nvme | 5× m.2 nvme |
-| lan ports | 2× 2.5gbe | 2× 2.5gbe | 2× 2.5gbe | 2× 2.5gbe | 4× 2.5gbe |
-| included ssd | none | 2tb nvme | 512gb nvme | 1tb nvme | none |
-| price | $165 | $279.20 | $229.99 | $236.55 | $220 |
+| cpu | Intel N150 | Intel N150 | Intel N150 | Intel N95 | Intel N100 |
+| ram | 12GB DDR5 | 12GB DDR5 | 12GB DDR5 | 12GB DDR5 | none |
+| internal storage | 1× m.2 NVMe | 6× m.2 NVMe | 4× m.2 NVMe | 1× m.2 NVMe | 5× m.2 NVMe |
+| lan ports | 2× 2.5Gbe | 2× 2.5Gbe | 2× 2.5Gbe | 2× 2.5Gbe | 4× 2.5Gbe |
+| included ssd | 512GB | 2TB | 512GB | 1TB | none |
+| price | $165 | $280 | $230 | $237 | $220 |
 | link | https://a.co/d/f5DZfaY | https://a.co/d/38gtPpa | https://a.co/d/hO3vfGU | https://a.co/d/4p9MgqI | https://a.co/d/2RLpDBq |
 
 ---
 
 # what i needed
 
-- fast enough to run opnsense/pfsense, docker, home assistant, syncthing, and a minecraft server  
+- fast enough to run opnsense/pfsense, docker, home assistant, syncthing, and a minecraft server for my kids and me (mostly me)
 - low power (always on)  
 - future-proof  
 - expandable internal storage  
 - dual 2.5gbe or better  
-- clean internal layout  
-- stable for 24/7 operation  
-
-my goal was to avoid usb storage, external nvme enclosures, and messy wiring. internal nvme slots mattered a lot.
-
----
-
-# contender breakdown  
-grading key:  
-`+` good `++` really good `·` neutral `-` bad `--` very bad
-
-price grading always appears *last* because it’s relative to everything above it.
 
 ---
 
@@ -57,11 +45,11 @@ price grading always appears *last* because it’s relative to everything above 
 **image:**  
 ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg)
 
-`+` cpu: **intel n150** — plenty for routing, docker, home assistant, nas, and minecraft<br>
-`+` ram: **12gb ddr5** — fast efficient ddr5, 12gb should be plenty<br>
-`++` storage: **6x m.2 nvme slots** — unmatched expandability at this size<br>
-`+` networking: **2x 2.5gbe** — ideal for router + lan setup<br>
-`+` included ssd: **2tb nvme** — adds real value and reduces total cost<br>
+`+` cpu: **Intel N150** — plenty for routing, docker, home assistant, nas, and minecraft<br>
+`+` ram: **12GB DDR5** — fast efficient ddr5, 12gb should be plenty<br>
+`++` storage: **6x m.2 NVMe slots** — unmatched expandability at this size<br>
+`+` networking: **2x 2.5Gbe** — router-ready<br>
+`+` included ssd: **2TB NVMe** — adds real value and reduces total cost<br>
 `++` size/cleanliness: internal power supply, very clean internals, awesome looking<br><br>
 `+` **price: $279.20** — strong value considering the storage and expandability  
 
@@ -70,16 +58,16 @@ my final pick.
 
 ---
 
-# 2. aoostar n1 pro n150 — 12gb ddr5 — dual 2.5gbe — 1× nvme  
+# 2. Aoostar N1 Pro N150 — 12gb DDR5 — dual 2.5gbe — 1× NVMe  
 **link:** https://a.co/d/f5DZfaY  
 **image:**  
 ![](https://m.media-amazon.com/images/I/61OqcyvrpeL._AC_SL1500_.jpg)
 
-`+` cpu: **intel n150** — great for lightweight homelab tasks<br>
-`+` ram: **12gb ddr5** — fast efficient ddr5, 12gb should be plenty<br>
-`-` storage: **single nvme slot** — severely limits long-term expansion<br>
-`+` networking: **2x 2.5gbe** — router-capable<br>
-`-` included ssd: **512gb** — fair, but not useful for our project<br>
+`+` cpu: **Intel N150** — great for lightweight homelab tasks<br>
+`+` ram: **12GB DDR5** — fast efficient ddr5, 12gb should be plenty<br>
+`-` storage: **single NVMe slot** — severely limits long-term expansion<br>
+`+` networking: **2x 2.5Gbe** — router-ready<br>
+`-` included ssd: **512GB** — fair, but not useful for our project<br>
 `+` size/cleanliness: super compact<br><br>
 `++` **price: $165** — one of the best deals in this category  
 
@@ -88,16 +76,16 @@ best value if storage doesn’t matter.
 
 ---
 
-# 3. gmktec g9 n150 — 12gb ddr5 — dual 2.5gbe — nvme + emmc  
+# 3. GMKtec G9 N150 — 12gb DDR5 — dual 2.5gbe — 4x NVMe  
 **link:** https://a.co/d/hO3vfGU  
 **image:**  
 ![](https://m.media-amazon.com/images/I/61ECn8BFbGL._AC_SL1500_.jpg)
 
-`+` cpu: **intel n150** — solid for most homelab workloads<br>
-`+` ram: **12gb ddr5** — fast efficient ddr5, 12gb should be plenty<br>
-`-` storage: **1× nvme + emmc** — emmc is useless, only one real slot<br>
-`+` networking: **2x 2.5gbe** — router-ready<br>
-`+` included ssd: **512gb nvme** — decent starter drive<br>
+`+` cpu: **Intel N150** — solid for most homelab workloads<br>
+`+` ram: **12GB DDR5** — fast efficient ddr5, 12gb should be plenty<br>
+`-` storage: **4× NVMe** — good, but not as expandable as the beelink<br>
+`+` networking: **2x 2.5Gbe** — router-ready<br>
+`+` included ssd: **512GB NVMe** — decent starter drive<br>
 `+` size/cleanliness: not the prettiest, but it's fine<br><br>
 `·` **price: $229.99** — okay, but weaker storage story than competitors  
 
@@ -106,16 +94,16 @@ only makes sense if you don’t care about future storage.
 
 ---
 
-# 4. beelink me mini n95 — 12gb ddr5 — dual 2.5gbe — 1tb nvme  
+# 4. Beelink ME Mini N95 — 12gb DDR5 — dual 2.5gbe — 1tb NVMe  
 **link:** https://a.co/d/4p9MgqI  
 **image:**  
 ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg)
 
-`-` cpu: **intel n95** — good enough, but limits future expansion<br>
-`+` ram: **12gb ddr5** — fast efficient ddr5, 12gb should be plenty<br>
-`++` storage: **6x m.2 nvme slots** — unmatched expandability at this size<br>
-`+` networking: **2x 2.5gbe** — ideal for router + lan setup<br>
-`+` included ssd: **2tb nvme** — adds real value and reduces total cost<br>
+`-` cpu: **Intel N95** — good enough, but limits future expansion<br>
+`+` ram: **12GB DDR5** — fast efficient ddr5, 12gb should be plenty<br>
+`++` storage: **6x m.2 NVMe slots** — unmatched expandability at this size<br>
+`+` networking: **2x 2.5Gbe** — ideal for router + lan setup<br>
+`+` included ssd: **2TB NVMe** — adds real value and reduces total cost<br>
 `++` size/cleanliness: internal power supply, very clean internals, awesome looking<br><br>
 `-` **price: $236.55** — for a little more you can get a better cpu and an additional 1tb of storage
 
@@ -123,15 +111,15 @@ only makes sense if you don’t care about future storage.
 
 ---
 
-# 5. generic n100 — 5× nvme — 4× 2.5gbe — barebones  
+# 5. Generic N100 — 5× NVMe — 4× 2.5Gbe — barebones  
 **link:** https://a.co/d/2RLpDBq  
 **image:**  
 ![](https://m.media-amazon.com/images/I/51sD8t6GUwL._AC_SL1000_.jpg)
 
-`·` cpu: **intel n100** — usable, not fast<br>
+`·` cpu: **Intel N100** — usable, not fast<br>
 `-` ram: **none** — adds significant cost, but allows for future upgrades<br>
-`++` storage: **5x nvme slots** — excellent expandability<br>
-`++` networking: **4x 2.5gbe** — great for vlan/router experiments<br>
+`++` storage: **5x NVMe slots** — excellent expandability<br>
+`++` networking: **4x 2.5Gbe** — great for vlan/router experiments<br>
 `--` included ssd: **none** — more cost on top<br>
 `+` size/cleanliness: all aluminum enclosure is cool, but not the prettiest<br><br>
 `-` **price: $220** — becomes overpriced once ram + nvme are added
