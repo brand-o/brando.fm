@@ -1,5 +1,5 @@
 ---
-title: "picking the perfect always-onmini pc for my mini rack"
+title: "picking the perfect always-on mini pc for my mini rack"
 description: "finding the perfect balance between performance, price, and expandability for my home server"
 pubDate: 2025-11-23
 type: shopping
