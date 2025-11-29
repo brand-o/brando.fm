@@ -1,172 +1,186 @@
 ---
-title: "picking the perfect always-onmini pc for my mini rack"
-description: "finding the perfect balance between performance, price, and expandability for my home server"
+title: "Picking the Perfect Always-On Mini PC for My Mini Rack"
+description: "Finding the perfect balance between performance, price, and expandability for my home server"
 pubDate: 2025-11-23
 type: shopping
 tags: ["project", "nas", "mini-pc", "tech", "diy", "home-server"]
 ---
 
-# building my new home network: why i chose the beelink n150 6-bay nas mini pc
+# Building My New Home Network: Why I Chose the Beelink N150 6-Bay NAS Mini PC
 
-this is the full breakdown of every mini pc i considered for my home rack.  
-the goal: an always-on machine for routing, storage, Docker, Home Assistant, Syncthing, and a Minecraft server for my kids and me (mostly me).
+This is the full breakdown of every Mini PC I considered for my home rack.  
+The goal: an always-on machine for routing, storage, Docker, Home Assistant, Syncthing, and a Minecraft server for my kids and me (mostly me).
 
-below is a quick comparison table to preview all five contenders.
+Below is a quick comparison table to preview all five contenders.
 
 ---
 
-# comparison table
+# Comparison Table
+
+<div style="overflow-x: auto">
 
 |  | **Aoostar N1 Pro N150** | **Beelink ME Mini N150** | **Gmktec G9 N150** | **Beelink ME Mini N95** | **Generic N100** |
 |---|---|---|---|---|---|
-| image | ![](https://m.media-amazon.com/images/I/61OqcyvrpeL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/61ECn8BFbGL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/51sD8t6GUwL._AC_SL1000_.jpg) |
-| cpu | Intel N150 | Intel N150 | Intel N150 | Intel N95 | Intel N100 |
-| ram | 12GB DDR5 | 12GB DDR5 | 12GB DDR5 | 12GB DDR5 | none |
-| internal storage | 1× m.2 NVMe | 6× m.2 NVMe | 4× m.2 NVMe | 1× m.2 NVMe | 5× m.2 NVMe |
-| lan ports | 2× 2.5Gbe | 2× 2.5Gbe | 2× 2.5Gbe | 2× 2.5Gbe | 4× 2.5Gbe |
-| included ssd | 512GB | 2TB | 512GB | 1TB | none |
-| price | $165 | $280 | $230 | $237 | $220 |
-| link | https://a.co/d/f5DZfaY | https://a.co/d/38gtPpa | https://a.co/d/hO3vfGU | https://a.co/d/4p9MgqI | https://a.co/d/2RLpDBq |
+| Image | ![](https://m.media-amazon.com/images/I/61OqcyvrpeL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/61ECn8BFbGL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/51sD8t6GUwL._AC_SL1000_.jpg) |
+| CPU | Intel N150 | Intel N150 | Intel N150 | Intel N95 | Intel N100 |
+| RAM | 12GB DDR5 | 12GB DDR5 | 12GB DDR5 | 12GB DDR5 | None |
+| Internal Storage | 1× M.2 NVMe | 6× M.2 NVMe | 4× M.2 NVMe | 1× M.2 NVMe | 5× M.2 NVMe |
+| LAN Ports | 2× 2.5GbE | 2× 2.5GbE | 2× 2.5GbE | 2× 2.5GbE | 4× 2.5GbE |
+| Included SSD | 512GB | 2TB | 512GB | 1TB | None |
+| Price | $165 | $280 | $230 | $237 | $220 |
+| Link | https://a.co/d/f5DZfaY | https://a.co/d/38gtPpa | https://a.co/d/hO3vfGU | https://a.co/d/4p9MgqI | https://a.co/d/2RLpDBq |
+
+</div>
 
 ---
 
-# what i needed
+# What I Needed
 
-- fast enough to run OPNsense/PFSense, Docker, Home Assistant, Syncthing, and a Minecraft server for my kids and me (mostly me)
-- low power (always on)  
-- future-proof  
-- expandable internal storage  
-- dual 2.5Gbe or better  
-
----
-
-# 1. Beelink ME Mini N150 — 6 NVMe slots — 12GB DDR5 — Dual 2.5Gbe  
-**link:** https://a.co/d/38gtPpa  
-**image:**  
-![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg)
-
-`+` cpu: **Intel N150** — plenty for routing, docker, home assistant, nas, and minecraft<br>
-`+` ram: **12GB DDR5** — fast efficient ddr5, 12gb should be plenty<br>
-`++` storage: **6x m.2 NVMe slots** — unmatched expandability at this size<br>
-`+` networking: **2x 2.5Gbe** — router-ready<br>
-`+` included ssd: **2TB NVMe** — adds real value and reduces total cost<br>
-`++` size/cleanliness: internal power supply, very clean internals, awesome looking<br><br>
-`+` **price: $279.20** — strong value considering the storage and expandability  
-
-**brando score: 8/10**  
-my final pick. overall the best value for the price.
+- Fast enough to run OPNsense/pfSense, Docker, Home Assistant, Syncthing, and a Minecraft server for my kids and me (mostly me)
+- Low power (always on)  
+- Future-proof  
+- Expandable internal storage  
+- Dual 2.5GbE or better  
 
 ---
 
-# 2. Aoostar N1 Pro N150 — 12GB DDR5 — Dual 2.5Gbe — 1× NVMe  
-**link:** https://a.co/d/f5DZfaY  
-**image:**  
-![](https://m.media-amazon.com/images/I/61OqcyvrpeL._AC_SL1500_.jpg)
+<img src="https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg" style="float: left; width: 200px; margin-right: 20px; margin-bottom: 20px;" />
 
-`+` cpu: **Intel N150** — great for lightweight homelab tasks<br>
-`+` ram: **12GB DDR5** — fast efficient ddr5, 12gb should be plenty<br>
-`-` storage: **single NVMe slot** — severely limits long-term expansion<br>
-`+` networking: **2x 2.5Gbe** — router-ready<br>
-`-` included ssd: **512GB** — fair, but not useful for our project<br>
-`+` size/cleanliness: super compact<br><br>
-`++` **price: $165** — one of the best deals in this category  
+# 1. Beelink ME Mini N150 — 6 NVMe slots — 12GB DDR5 — Dual 2.5GbE  
+**Link:** https://a.co/d/38gtPpa  
 
-**brando score: 6/10**  
-great value if storage expandability doesn’t matter.
+`+` CPU: **Intel N150** — Plenty for routing, Docker, Home Assistant, NAS, and Minecraft<br>
+`+` RAM: **12GB DDR5** — Fast efficient DDR5, 12GB should be plenty<br>
+`++` Storage: **6x M.2 NVMe slots** — Unmatched expandability at this size<br>
+`+` Networking: **2x 2.5GbE** — Router-ready<br>
+`+` Included SSD: **2TB NVMe** — Adds real value and reduces total cost<br>
+`++` Size/Cleanliness: Internal power supply, very clean internals, awesome looking<br><br>
+`+` **Price: $279.20** — Strong value considering the storage and expandability  
 
----
+**Brando Score: 8/10**  
+My final pick. Overall the best value for the price.
 
-# 3. GMKtec G9 N150 — 12GB DDR5 — Dual 2.5Gbe — 4x NVMe  
-**link:** https://a.co/d/hO3vfGU  
-**image:**  
-![](https://m.media-amazon.com/images/I/61ECn8BFbGL._AC_SL1500_.jpg)
-
-`+` cpu: **Intel N150** — solid for most homelab workloads<br>
-`+` ram: **12GB DDR5** — fast efficient ddr5, 12gb should be plenty<br>
-`-` storage: **4× NVMe** — good, but not as expandable as the beelink<br>
-`+` networking: **2x 2.5Gbe** — router-ready<br>
-`+` included ssd: **512GB NVMe** — decent starter drive<br>
-`+` size/cleanliness: not the prettiest, but it's fine<br><br>
-`·` **price: $229.99** — okay, but less storage than competitors and less expandability.
-
-**brando score: 7/10**  
-great alternative to the Beelink ME Mini N150 if you don’t want the included 2TB NVMe or 6x NVMe slots.
+<br clear="both"/>
 
 ---
 
-# 4. Beelink ME Mini N95 — 12GB DDR5 — Dual 2.5Gbe — 1TB NVMe  
-**link:** https://a.co/d/4p9MgqI  
-**image:**  
-![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg)
+<img src="https://m.media-amazon.com/images/I/61OqcyvrpeL._AC_SL1500_.jpg" style="float: left; width: 200px; margin-right: 20px; margin-bottom: 20px;" />
 
-`-` cpu: **Intel N95** — good enough, but limits future expansion<br>
-`+` ram: **12GB DDR5** — fast efficient ddr5, 12gb should be plenty<br>
-`++` storage: **6x m.2 NVMe slots** — unmatched expandability at this size<br>
-`+` networking: **2x 2.5Gbe** — ideal for router + lan setup<br>
-`+` included ssd: **2TB NVMe** — adds real value and reduces total cost<br>
-`++` size/cleanliness: internal power supply, very clean internals, awesome looking<br><br>
-`-` **price: $236.55** — for a little more you can get a better cpu and an additional 1tb of storage
+# 2. Aoostar N1 Pro N150 — 12GB DDR5 — Dual 2.5GbE — 1× NVMe  
+**Link:** https://a.co/d/f5DZfaY  
 
-**brando score: 6/10**
-the best option if you don’t want the extra power or storage from the Beelink ME Mini N150 2TB.
+`+` CPU: **Intel N150** — Great for lightweight homelab tasks<br>
+`+` RAM: **12GB DDR5** — Fast efficient DDR5, 12GB should be plenty<br>
+`-` Storage: **Single NVMe slot** — Severely limits long-term expansion<br>
+`+` Networking: **2x 2.5GbE** — Router-ready<br>
+`-` Included SSD: **512GB** — Fair, but not useful for our project<br>
+`+` Size/Cleanliness: Super compact<br><br>
+`++` **Price: $165** — One of the best deals in this category  
 
----
+**Brando Score: 6/10**  
+Great value if storage expandability doesn’t matter.
 
-# 5. Generic N100 — 5× NVMe — 4× 2.5Gbe — Barebones  
-**link:** https://a.co/d/2RLpDBq  
-**image:**  
-![](https://m.media-amazon.com/images/I/51sD8t6GUwL._AC_SL1000_.jpg)
-
-`·` cpu: **Intel N100** — usable, not fast<br>
-`-` ram: **none** — adds significant cost, but allows for future upgrades<br>
-`++` storage: **5x NVMe slots** — excellent expandability<br>
-`++` networking: **4x 2.5Gbe** — great for vlan/router experiments<br>
-`--` included ssd: **none** — more cost on top<br>
-`+` size/cleanliness: all aluminum enclosure is cool, but not the prettiest<br><br>
-`-` **price: $220** — becomes overpriced once ram + nvme are added
-
-**brando score: 5/10**  
-perfect for router labs, but not ideal for an all-in-one homelab when you factor the total price.
+<br clear="both"/>
 
 ---
 
-# what i chose
+<img src="https://m.media-amazon.com/images/I/61ECn8BFbGL._AC_SL1500_.jpg" style="float: left; width: 200px; margin-right: 20px; margin-bottom: 20px;" />
 
-the **beelink me mini n150 6-bay nas mini pc**  
+# 3. GMKtec G9 N150 — 12GB DDR5 — Dual 2.5GbE — 4x NVMe  
+**Link:** https://a.co/d/hO3vfGU  
+
+`+` CPU: **Intel N150** — Solid for most homelab workloads<br>
+`+` RAM: **12GB DDR5** — Fast efficient DDR5, 12GB should be plenty<br>
+`-` Storage: **4× NVMe** — Good, but not as expandable as the Beelink<br>
+`+` Networking: **2x 2.5GbE** — Router-ready<br>
+`+` Included SSD: **512GB NVMe** — Decent starter drive<br>
+`+` Size/Cleanliness: Not the prettiest, but it's fine<br><br>
+`·` **Price: $229.99** — Okay, but less storage than competitors and less expandability.
+
+**Brando Score: 7/10**  
+Great alternative to the Beelink ME Mini N150 if you don’t want the included 2TB NVMe or 6x NVMe slots.
+
+<br clear="both"/>
+
+---
+
+<img src="https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg" style="float: left; width: 200px; margin-right: 20px; margin-bottom: 20px;" />
+
+# 4. Beelink ME Mini N95 — 12GB DDR5 — Dual 2.5GbE — 1TB NVMe  
+**Link:** https://a.co/d/4p9MgqI  
+
+`-` CPU: **Intel N95** — Good enough, but limits future expansion<br>
+`+` RAM: **12GB DDR5** — Fast efficient DDR5, 12GB should be plenty<br>
+`++` Storage: **6x M.2 NVMe slots** — Unmatched expandability at this size<br>
+`+` Networking: **2x 2.5GbE** — Ideal for router + LAN setup<br>
+`+` Included SSD: **2TB NVMe** — Adds real value and reduces total cost<br>
+`++` Size/Cleanliness: Internal power supply, very clean internals, awesome looking<br><br>
+`-` **Price: $236.55** — For a little more you can get a better CPU and an additional 1TB of storage
+
+**Brando Score: 6/10**
+The best option if you don’t want the extra power or storage from the Beelink ME Mini N150 2TB.
+
+<br clear="both"/>
+
+---
+
+<img src="https://m.media-amazon.com/images/I/51sD8t6GUwL._AC_SL1000_.jpg" style="float: left; width: 200px; margin-right: 20px; margin-bottom: 20px;" />
+
+# 5. Generic N100 — 5× NVMe — 4× 2.5GbE — Barebones  
+**Link:** https://a.co/d/2RLpDBq  
+
+`·` CPU: **Intel N100** — Usable, not fast<br>
+`-` RAM: **None** — Adds significant cost, but allows for future upgrades<br>
+`++` Storage: **5x NVMe slots** — Excellent expandability<br>
+`++` Networking: **4x 2.5GbE** — Great for VLAN/router experiments<br>
+`--` Included SSD: **None** — More cost on top<br>
+`+` Size/Cleanliness: All aluminum enclosure is cool, but not the prettiest<br><br>
+`-` **Price: $220** — Becomes overpriced once RAM + NVMe are added
+
+**Brando Score: 5/10**  
+Perfect for router labs, but not ideal for an all-in-one homelab when you factor the total price.
+
+<br clear="both"/>
+
+---
+
+# What I Chose
+
+The **Beelink ME Mini N150 6-Bay NAS Mini PC**  
 https://a.co/d/38gtPpa
 
-it hit every requirement:
+It hit every requirement:
 
-- six NVMe slots  
-- internal power supply  
-- dual 2.5Gbe  
-- clean internals  
-- low power draw  
-- enough CPU for Docker, Home Assistant, OPNsense, Minecraft, and more  
-- included 2tb NVMe  
-- zero external storage clutter  
-- price is the sweet spot for everything included
+- Six NVMe slots  
+- Internal power supply  
+- Dual 2.5GbE  
+- Clean internals  
+- Low power draw  
+- Enough CPU for Docker, Home Assistant, OPNsense, Minecraft, and more  
+- Included 2TB NVMe  
+- Zero external storage clutter  
+- Price is the sweet spot for everything included
 
 ---
 
-# runner-up
+# Runner-Up
 
-**aoostar n1 pro n150**  
+**Aoostar N1 Pro N150**  
 https://a.co/d/f5DZfaY  
-best deal per dollar, but not enough expandable storage for this build.
+Best deal per dollar, but not enough expandable storage for this build.
 
 ---
 
-# the one i wanted but didn’t need
+# The One I Wanted But Didn’t Need
 
-**generic n100 5×nvme / 4×lan**  
+**Generic N100 5×NVMe / 4×LAN**  
 https://a.co/d/2RLpDBq  
-incredibly flexible, but too expensive once you add ram and an NVMe.
+Incredibly flexible, but too expensive once you add RAM and an NVMe.
 
 ---
 
-# final thoughts
+# Final Thoughts
 
-if you only need 1–2 nvme drives, cheaper models make sense.  
-but if you want a clean, expandable, long-term, always-on homelab brain with no external storage nonsense, the **Beelink ME Mini N150** is the clear winner.
+If you only need 1–2 NVMe drives, cheaper models make sense.  
+But if you want a clean, expandable, long-term, always-on homelab brain with no external storage nonsense, the **Beelink ME Mini N150** is the clear winner.
 
