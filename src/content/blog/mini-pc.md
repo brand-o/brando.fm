@@ -1,6 +1,11 @@
 ---
+<<<<<<< HEAD
 title: "Picking the Perfect Always-On Mini PC for My Mini Rack"
 description: "Finding the perfect balance between performance, price, and expandability for my home server"
+=======
+title: "picking the perfect always-on mini pc for my mini rack"
+description: "finding the perfect balance between performance, price, and expandability for my home server"
+>>>>>>> 1f5946d2046e6a5faf9087d2453318ace637521d
 pubDate: 2025-11-23
 type: shopping
 tags: ["project", "nas", "mini-pc", "tech", "diy", "home-server"]
@@ -24,7 +29,7 @@ Below is a quick comparison table to preview all five contenders.
 | Image | ![](https://m.media-amazon.com/images/I/61OqcyvrpeL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/61ECn8BFbGL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/71zwLGpFttL._AC_SL1500_.jpg) | ![](https://m.media-amazon.com/images/I/51sD8t6GUwL._AC_SL1000_.jpg) |
 | CPU | Intel N150 | Intel N150 | Intel N150 | Intel N95 | Intel N100 |
 | RAM | 12GB DDR5 | 12GB DDR5 | 12GB DDR5 | 12GB DDR5 | None |
-| Internal Storage | 1× M.2 NVMe | 6× M.2 NVMe | 4× M.2 NVMe | 1× M.2 NVMe | 5× M.2 NVMe |
+| Internal Storage | 1× M.2 NVMe | 6× M.2 NVMe | 4× M.2 NVMe | 6× M.2 NVMe | 5× M.2 NVMe |
 | LAN Ports | 2× 2.5GbE | 2× 2.5GbE | 2× 2.5GbE | 2× 2.5GbE | 4× 2.5GbE |
 | Included SSD | 512GB | 2TB | 512GB | 1TB | None |
 | Price | $165 | $280 | $230 | $237 | $220 |
