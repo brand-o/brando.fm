@@ -4,7 +4,7 @@ const today = new Date();
 
 <footer>
 	&copy; {today.getFullYear()} brando.fm. all rights reserved.
-	<div class="disclosure">as an amazon associate, i earn from qualifying purchases.</div>
+	<div class="disclosure"></div>
 </footer>
 <style>
 	footer {
@@ -14,7 +14,11 @@ const today = new Date();
 		text-align: center;
 		border-top: 1px solid var(--rule);
 	}
-	.disclosure { margin-top: .75rem; font-size: .9rem; color: rgb(var(--gray-dark)); }
+	.disclosure {
+		margin-top: 0.75rem;
+		font-size: 0.9rem;
+		color: rgb(var(--gray-dark));
+	}
 	.social-links {
 		display: flex;
 		justify-content: center;
