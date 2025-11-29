@@ -1,3 +1,10 @@
+---
+title: "My New Home Media Setup: Building a Clean, Automated Streaming Hub on the Beelink ME Mini"
+description: "I used AI to set up my media center, and it worked like a charm."
+pubDate: 2025-11-29
+tags: ["project","media","tech","diy","home"]
+---
+
 # My New Home Media Setup: Building a Clean, Automated Streaming Hub on the Beelink ME Mini
 
 I wanted to dive into the world of home media, but I didn't want to deal with the complexity of setting up and maintaining a media center. I also didn't want to deal with the hassle of setting up and maintaining a media center.
