@@ -1,9 +1,9 @@
 ---
-title: "Picking the Perfect Always-On Mini PC for My Mini Rack"
+title: "Picking the Perfect Always‑On Mini PC for My Mini Rack"
 description: "Finding the perfect balance between performance, price, and expandability for my home server"
 pubDate: 2025-11-23
 type: shopping
-tags: ["project", "nas", "mini-pc", "tech", "diy", "home-server"]
+tags: ["project","nas","mini-pc","tech","diy","home-server"]
 ---
 
 # Building My New Home Network: Why I Chose the Beelink N150 6-Bay NAS Mini PC
