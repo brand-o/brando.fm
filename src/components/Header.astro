@@ -13,13 +13,11 @@ const [brandRoot, brandTld] = SITE_TITLE.split(".", 2);
                 data-text={`${brandRoot}.${brandTld}`}
                 >{brandRoot}<span class="brand-sep">.</span><span
                     class="brand-dot">{brandTld}</span
-                ></a>
+                ></a
+            >
         </h2>
         <div class="internal-links">
             <HeaderLink href="/">home</HeaderLink>
-            <HeaderLink href="/blog?type=review">reviews</HeaderLink>
-            <HeaderLink href="/blog?type=project">projects</HeaderLink>
-            <HeaderLink href="/blog?type=shopping">shopping</HeaderLink>
         </div>
     </nav>
 </header>

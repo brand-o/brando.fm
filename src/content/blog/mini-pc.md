@@ -1,11 +1,6 @@
 ---
-<<<<<<< HEAD
 title: "Picking the Perfect Always-On Mini PC for My Mini Rack"
 description: "Finding the perfect balance between performance, price, and expandability for my home server"
-=======
-title: "picking the perfect always-on mini pc for my mini rack"
-description: "finding the perfect balance between performance, price, and expandability for my home server"
->>>>>>> 1f5946d2046e6a5faf9087d2453318ace637521d
 pubDate: 2025-11-23
 type: shopping
 tags: ["project", "nas", "mini-pc", "tech", "diy", "home-server"]
